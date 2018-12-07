@@ -1,0 +1,167 @@
+\begin{enumerate}
+\item Consider the linear program
+  \begin{equation*}
+    \LP{2}{
+    \text{maximize}  &z&= & 2x_1 &+& 3x_2 &      &    \\
+    \text{subject to}& &  & 4x_1 &+& 3x_2 & \leq & 15 \\
+                     & &  &  x_1 &+&  x_2 & \leq &  4 \\
+		     & &  &\multicolumn{5}{c}{x_1, x_2 \geq 0}
+			 }
+  \end{equation*}
+
+  Classify each of the following solutions as one of:
+  \begin{itemize}
+    \item infeasible solution,
+    \item feasible boundary solution, or
+    \item feasible interior solution.
+  \end{itemize}
+
+%  \begin{multicols}{2}
+    \begin{enumerate}
+      \item \(\Vec{x} = \begin{bmatrix} 3\\3\end{bmatrix}\)
+      This is infeasible because it violates constraints one an two.
+      \item \(\Vec{x} = \begin{bmatrix}-1\\2\end{bmatrix}\)
+      This is infeasible because it violates the third constraint.
+      \item \(\Vec{x} = \begin{bmatrix} 1\\1\end{bmatrix}\)
+      This is a feasible interior point because the values in the vector used as x1 and x2 in the constraints are all not equal to the constraint values. 
+      \item \(\Vec{x} = \begin{bmatrix} 2\\2\end{bmatrix}\)
+      This is a feasible boundary point because the values in the vector used as x1 and x2 in the constraints are equal to the constraint value for constraint 2. 
+    \end{enumerate}
+%  \end{multicols}
+ 
+ \item Consider each of the following tableaux.
+    \begin{enumerate}
+      \item Does the tableau represents a valid basic solution? If so, what are the basic variables
+	and what is the basic solution?
+      \item Does the tableau represents a basic feasible solution?
+      \item Does the tableau represents an optimal solution?
+      \item If the tableau represents a basic feasible solution that is not optimal, what would be your
+	next step in finding an optimal basic feasible solution (using the simplex algorithm)?
+      \item If time allows, carry out your step.
+    \end{enumerate}
+    \begin{enumerate}[label=\bfseries\Roman*)]
+      \item 
+	\begin{equation*}
+	  \simpmat{3}{5}{
+	    z&x_{{1}}          &x_{{2}}&x_{{3}}&s_{{1}}&s _{{2}}        &s_{{3}}&s_{{4}}         &s_{{5}}&{\rhs}\\
+	    \hline
+	    1&{\nicefrac{  78}{19}}&  0    &  0    &  0    &{\nicefrac{ 20}{19}}&   0   &{\nicefrac{13}{19}}&0&{\nicefrac{ 834}{19}} \\
+	    0&{\nicefrac{  33}{19}}&  1    &  0    &  0    &{\nicefrac{  7}{19}}&   0   &{\nicefrac{-4}{19}}&0&{\nicefrac{ 138}{19}} \\
+	    0&{\nicefrac{  -8}{19}}&  0    &  1    &  0    &{\nicefrac{ -4}{19}}&   0   &{\nicefrac{ 5}{19}}&0&{\nicefrac{ -30}{19}} \\
+	    0&{\nicefrac{-172}{19}}&  0    &  0    &  1    &{\nicefrac{-48}{19}}&   0   &{\nicefrac{22}{19}}&0&{\nicefrac{-645}{19}} \\
+	    0&{\nicefrac{  17}{19}}&  0    &  0    &  0    &{\nicefrac{-20}{19}}&   1   &{\nicefrac{ 6}{19}}&0&{\nicefrac{-131}{19}} \\
+	    0&{\nicefrac{-137}{19}}&  0    &  0    &  0    &{\nicefrac{-59}{19}}&   0   &{\nicefrac{31}{19}}&1&{\nicefrac{-775}{19}}
+	  }
+	\end{equation*}
+	This tableau does represent a valid basic solution: z = \nicefrac{834}{19}, x1 = 0, x2 = \nicefrac{834}{19}, x3 = \nicefrac{138}{19}, s1 = \nicefrac{-645}{19}, s2 = 0, s3 = \nicefrac{-131}{19}, s4 = 0, and s5 = \nicefrac{-775}{19}. This tableau does not represent a feasible solution because the right hand side is negative. The tableau is not at optimal because it is not feasible in the first place. 
+      \item 
+	\begin{equation*}
+	  \simpmat{3}{5}{
+	    z&x_{{1}}&x_{{2}}&x_{{3}}&s_{{1}}&s_{{2}}&s_{{3}}&s_{{4}}&s_{{5}}&{\rhs}\\
+	    \hline
+	    1&{\nicefrac{104}{11}}&0&0&{\nicefrac{-13}{22}}&{\nicefrac{28}{11}}&0&0&0&{\nicefrac{1407}{22}}\\
+	    0&{\nicefrac{18}{11}}&0&1&{\nicefrac{-5}{22}}&\nicefrac{4}{11}&0&0&0&{\nicefrac{135}{22}}\\
+	    0&\nicefrac{1}{11}&1&0&\nicefrac{2}{11}&\nicefrac{-1}{11}&0&0&0&{\nicefrac{12}{11}}\\
+	    0&{\nicefrac{37}{11}}&0&0&\nicefrac{-3}{11}&\nicefrac{-4}{11}&1&0&0&{\nicefrac{26}{11}}\\
+	    0&{\nicefrac{-86}{11}}&0&0&{\nicefrac{19}{22}}&{\nicefrac{-24}{11}}&0&1&0&{\nicefrac{-645}{22}}\\
+	    0&{\nicefrac{61}{11}}&0&0&{\nicefrac{-31}{22}}&{\nicefrac{5}{11}}&0&0&1&{\nicefrac{155}{22}}
+	  }
+	\end{equation*}
+	The tableau is a basic solution: z = \nicefrac{1407}{22}, x1 = 0, x2 = \nicefrac{12}{11}, x3 = \nicefrac{135}{22}, s1 = 0, s2 = 0, s3 = \nicefrac{26}{11}, s4 = \nicefrac{-645}{22}, s5 = \nicefrac{155}{22}. It is not feasible b\c it has negative values in the RHS. If it is not feasible it cant have an optimum. 
+      \item 
+	\begin{equation*}
+	  \simpmat{3}{5}{
+	    z&x_{{1}}&x_{{2}}&x_{{3}}&s_{{1}}&s_{{2}}&s_{{3}}&s_{{4}}&s_{{5}}&{\rhs}\\
+	    \hline
+	    1&0&{\nicefrac{-32}{7}}&{\nicefrac{-51}{7}}&0&0&\nicefrac{6}{7}&0&0&{\nicefrac{114}{7}}\\
+	    0&0&{\nicefrac{40}{7}}&\nicefrac{6}{7}&1&0&\nicefrac{-4}{7}&0&0&{\nicefrac{71}{7}}\\
+	    0&0&1&2&0&1&-1&0&0&11\\
+	    0&1&\nicefrac{4}{7}&\nicefrac{2}{7}&0&0&\nicefrac{1}{7}&0&0&{\nicefrac{19}{7}}\\
+	    0&0&{\nicefrac{12}{7}}&{\nicefrac{41}{7}}&0&0&\nicefrac{-4}{7}&1&0&{\nicefrac{50}{7}}\\
+	    0&0&{\nicefrac{31}{7}}&{\nicefrac{-9}{7}}&0&0&{\nicefrac{-8}{7}}&0&1&{\nicefrac{9}{7}}
+	  }
+	\end{equation*}
+	This is a basic solution: z = \nicefrac{114}{7}, x1 = \nicefrac{19}{7}, x2 = 0 , x3 = 0 , s1 = \nicefrac{71}{7}, s2 = 11, s3 = 0, s4 = \nicefrac{50}{7}, s5 = \nicefrac{9}{7}. It is a basic feasible solution. It is not at optimum yet b/c there are still negatives in the objective function row. I would then use the simplex alg. to choose x2 as the entering var based on Bland's rule and the leaving var based on the ratio test is s5. The solution is in solutionA2Q2c.tex.
+      \item 
+	\begin{equation*}
+	  \simpmat{3}{5}{
+	  z&x_{{1}}&x_{{2}}&x_{{3}}&s_{{1}}&s_{{2}}&s_{{3}}&s_{{4}}&s_{{5}}&{\rhs}\\
+	  \hline
+	  1&\nicefrac{1}{3}&0&0&{\nicefrac{5}{12}}&0&0&\nicefrac{7}{6}&0&{\nicefrac{119}{4}}\\
+	  0&{\nicefrac{5}{12}}&1&0&{\nicefrac{7}{48}}&0&0&-\nicefrac{1}{24}&0&{\nicefrac{37}{16}}\\
+	  0&\nicefrac{1}{3}&0&1&-\nicefrac{1}{12}&0&0&\nicefrac{1}{6}&0&\nicefrac{5}{4}\\
+	  0&{\nicefrac{43}{12}}&0&0&{\nicefrac{-19}{48}}&1&0&{\nicefrac{-11}{24}}&0&{\nicefrac{215}{16}}\\
+	  0&\nicefrac{14}{3}&0&0&{\nicefrac{-5}{12}}&0&1&-\nicefrac{1}{6}&0&{\nicefrac{29}{4}}\\
+	  0&{\nicefrac{47}{12}}&0&0&{\nicefrac{-59}{48}}&0&0&{\nicefrac{5}{24}}&1&{\nicefrac{15}{16}}
+	  }
+	\end{equation*}
+	This tableau does represent a basic solution: z = \nicefrac{119}{4}, x1 = 0, x2 = \nicefrac{37}{16}, x3 = \nicefrac{5}{4}, s1 = 0, s2 = \nicefrac{5}{4}, s3 = \nicefrac{29}{4}, s4 = 0, s5 = \nicefrac{15}{16}. This is a feasible solution. This is at optimal b/c the objective row is all positive.  
+    \end{enumerate}
+ 
+ \item 
+Below are listed several simplex tableaux.  Each represents a maximization LP at
+a basic feasible solution.  
+
+Your goal is to analyze the tableaux thoroughly. 
+Some suggestions are the following:
+\begin{enumerate}
+\item Determine which variables are basic and which are non-basic.
+\item List the current basic feasible solution (including all variables and their values).
+\item 
+\begin{enumerate}
+\item  Perform an appropriate simplex pivot, explaining why you
+  chose the entering and leaving variables as you did, or 
+\item  Explain why no pivot is possible/appropriate and what that says about the LP.
+\end{enumerate}
+\item If you can, determine whether the LP, for example,
+is unbounded, is infeasible, is degenerate, is at optimum, has alternate optima,
+\emph{etc}.
+\end{enumerate}
+
+\begin{center}
+  \begin{tabular}{c}
+  Tableau I\\
+  \simpmat{3}{3}{
+    z &x_{1} & x_{2} &x_{3} & s_{1}& s_{2} &s_{3} &\rhs \\ \hline
+    1 & 0    & -2    & 0    &  1   & 0     & 0    & 10  \\
+    0 & 0    & -1    & 0    &  1   & 1     & 5    &  2  \\
+    0 & 1    & -4    & 0    &  4   & 0     & 8    &  6  \\
+    0 & 0    &  0    & 1    &  4   & 0     &-1    &  8  }
+\end{tabular} 
+\end{center}
+
+
+The basic vars are x1, x3, s2, and the non basic vars are x2, s1, s3. The current basic feasable solution is : z = 10, x1 = 6, x2 =0, x3 = 8, s1 = 0, s2 = 2, s3 = 0. An entering variable is x2 b/c of blands rule and its negative. The leaving variable is not possible b/c they are all negative based on the ratio test. This means that the tableau can not be solved using the simplex method. 
+
+
+\begin{center}
+  \begin{tabular}{c}
+    Tableau II \\
+    \simpmat{3}{3}{
+      z &x_{1} & x_{2} &x_{3} & s_{1}& s_{2} &s_{3} &\rhs \\ \hline
+      1 &-2    &  0    & 1    &  0   &  2    & 0    & 6   \\ 
+      0 & 2    &  1    & 6    &  0   &  5    & 0    & 5   \\
+      0 & 4    &  0    & 8    &  1   & 12    & 0    & 8   \\
+    0 & 3    &  0    & 9    &  0   & -2    & 1    & 9   }
+  \end{tabular}
+\end{center}
+
+
+This basic vars are x2, s1 and s3. the non basic vars are x1, x3, and s2. The current basic feasible solution is z = 6 , x1 = 0 , x2 = 5, x3 = 0, s1 = 8, s2 = 0 s3 = 9. The next steps I would take using the simplex alg would be having x1 as the entering variable b/c blands rule and its negative in the objective row. the leaving variable would be x2 because ratio test. 
+
+
+
+\begin{center}
+  \begin{tabular}{c} 
+    Tableau III\\
+  \simpmat{3}{3}{
+    z &x_{1} & x_{2} &x_{3} & s_{1}& s_{2} &s_{3} &\rhs \\ \hline
+    1 & 0    &  1    & 0    & 4    &  0    & 0    & 8  \\
+    0 & 0    &  0    & 1    & 1    &  1    & 0    & 3  \\
+    0 & 0    & -1    &-3    & 1    &  0    & 1    & 4  \\
+    0 & 1    &  1    & 1    &-2    &  0    & 0    & 5
+  }
+\end{tabular}
+\end{center}
+ \end{enumerate}
+
