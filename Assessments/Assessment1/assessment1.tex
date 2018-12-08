@@ -1,0 +1,170 @@
+\begin{enumerate}
+    \begin{comment}
+%% Begin Exercise
+\item 
+Below are listed several simplex tableaux.  Each represents a maximization LP at
+a basic feasible solution.  
+
+Your goal is to analyze the tableaux thoroughly. 
+Some suggestions are the following:
+\begin{enumerate}
+\item Determine which variables are basic and which are non-basic.
+\item List the current basic feasible solution (including all variables and their values).
+\item 
+\begin{enumerate}
+\item  Perform an appropriate simplex pivot, explaining why you
+  chose the entering and leaving variables as you did, or 
+\item  Explain why no pivot is possible/appropriate and what that says about the LP.
+\end{enumerate}
+\item If you can, determine whether the LP, for example,
+is unbounded, is infeasible, is degenerate, is at optimum, has alternate optima,
+\emph{etc}.
+\end{enumerate}
+
+\begin{center}
+  \begin{tabular}{c}
+  Tableau I\\
+  \simpmat{3}{3}{
+    z &x_{1} & x_{2} &x_{3} & s_{1}& s_{2} &s_{3} &\rhs \\ \hline
+    1 & 0    & -2    & 0    &  1   & 0     & 0    & 10  \\
+    0 & 0    & -1    & 0    &  1   & 1     & 5    &  2  \\
+    0 & 1    & -4    & 0    &  4   & 0     & 8    &  6  \\
+    0 & 0    &  0    & 1    &  4   & 0     &-1    &  8  }
+\end{tabular}
+  \hfill
+  \begin{tabular}{c}
+  Tableau II \\
+  \simpmat{3}{3}{
+    z &x_{1} & x_{2} &x_{3} & s_{1}& s_{2} &s_{3} &\rhs \\ \hline
+    1 &-2    &  0    & 1    &  0   &  2    & 0    & 6   \\ 
+    0 & 2    &  1    & 6    &  0   &  5    & 0    & 5   \\
+    0 & 4    &  0    & 8    &  1   & 12    & 0    & 8   \\
+    0 & 3    &  0    & 9    &  0   & -2    & 1    & 9   }
+\end{tabular}
+  \\[1.5ex]
+  \begin{tabular}{c} 
+    Tableau III\\
+  \simpmat{3}{3}{
+    z &x_{1} & x_{2} &x_{3} & s_{1}& s_{2} &s_{3} &\rhs \\ \hline
+    1 & 0    &  1    & 0    & 4    &  0    & 0    & 8  \\
+    0 & 0    &  0    & 1    & 1    &  1    & 0    & 3  \\
+    0 & 0    & -1    &-3    & 1    &  0    & 1    & 4  \\
+    0 & 1    &  1    & 1    &-2    &  0    & 0    & 5
+  }
+\end{tabular}
+\end{center}
+%% End Exercise
+
+\clearpage
+\end{comment}
+%% Begin Exercise
+\item Consider the following Linear Program (LP):
+\begin{equation*}
+  \LP{3}{
+\text{maximize\quad}	 &z&=& 2x_1 &   &      & + & 9x_3 &      &    \\\notag
+\text{subject to:\quad}  & & & 3x_1 & + & 2x_2 & - &  x_3 & \geq & 10 \\\notag
+                     	 & & &  x_1 & - &  x_2 &   &      & \leq &  0 \\\notag
+                     	 & & &  x_1 & + & 3x_2 & + &  x_3 & \leq & 11 \\\notag
+			 & & &\multicolumn{7}{c}{x_1, x_2, x_3 \geq 0}
+		       }
+\end{equation*}
+\begin{enumerate}
+  \item Put the LP into standard inequality (\(\le\)) form.
+
+  \item For each of the following solutions, determine whether the solution is feasible or not, and
+    explain why.
+    \begin{multicols}{2}
+      \begin{enumerate}
+	\item 	\(x_{1}=0,x_{2}=0,x_{3}=0\)
+	\item 	\(x_{1}=0,x_{2}=0,x_{3}=11\)
+	\item 	\(x_{1}=0,x_{2}=0,x_{3}=-10\)
+	\item 	\(x_{1}=2,x_{2}=2,x_{3}=0\)
+      \end{enumerate}
+    \end{multicols}
+  \item For each of the following solutions, evaluate the objective function value at the solution.
+    \begin{multicols}{2}
+      \begin{enumerate}
+	\item 	\(x_{1}=0,x_{2}=0,x_{3}=0\)
+	\item 	\(x_{1}=0,x_{2}=0,x_{3}=11\)
+	\item 	\(x_{1}=0,x_{2}=0,x_{3}=-10\)
+	\item 	\(x_{1}=2,x_{2}=2,x_{3}=0\)
+      \end{enumerate}
+    \end{multicols}
+\end{enumerate}
+%% End Exercise
+
+\clearpage
+%% Begin Exercise
+\item 
+Consider the following LP (where the objective function is unspecified):
+\begin{equation*}\LP{2}{
+    \text{maximize}&z&=&\multicolumn{3}{c}{f(x_{1},x_{2})}\\
+    \text{subject to}& & & -x_1 & + &  x_2 & \leq & 2\\\notag
+                     & & &  x_1 & - & 2x_2 & \leq & 1\\\notag
+	             & & & \multicolumn{5}{c}{x_1,x_2\geq0}
+	 }
+\end{equation*}
+\begin{enumerate}
+\item Sketch and shade the feasible region. You may use the grid in \tabref[vref]{sketchFeasible}.
+\item Is the \emph{feasible region} bounded or unbounded? How can you tell?
+\item Assuming that the objective for the LP is
+\begin{equation*}
+  \LP{2}{\text{maximize}&z&=&x_{1}&-&3x_{2}}
+\end{equation*}
+\begin{enumerate}
+  \item Draw and label (with the objective value) several contour lines for this objective function;
+  \item Explain, based on the feasible region and your contours, whether the LP:
+  \begin{itemize}
+    \item is unbounded, 
+    \item is infeasible, or
+    \item has optimal solution(s); 
+  \end{itemize}
+\end{enumerate}
+\end{enumerate}
+\textbf{Stretch Questions}
+\begin{enumerate}[resume]
+\item The following parts involve \textbf{the same constraints} (and thus the same feasible region),
+  but require you to 
+  \begin{itemize}
+    \item \textbf{find an appropriate (linear) objective function}\\
+      \qquad{}or 
+    \item \textbf{explain why it is impossible to find such a (linear) objective function.}
+  \end{itemize}
+  (Assume in each case that you are \emph{maximizing} your objective function.)
+
+  \textbf{Hint:} Start with the geometry, then design contour lines, and then develop the function.
+	\begin{enumerate}
+	\item Find an objective function so that the LP has no optimal solution.
+	\item Find an objective function so that the LP is unbounded.
+	\item Find an objective function so that the LP has a unique optimal solution.
+	\item Find an objective function so that the LP has exactly two optimal solutions.
+	\item Find an objective function so that the LP has infinitely many optimal solutions.
+	\item Find an objective function so that the LP is infeasible.
+	\end{enumerate}
+\end{enumerate}
+
+\begin{figure*}[ht]
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.30cm,y=0.30cm]
+\foreach \x in {1,2,...,5}
+\draw[shift={(10*\x,0)},color=black,line width=2pt,xstep=5] (0pt,3pt) -- (0pt,-3pt) node[below] {$\x$};
+\foreach \x in {1,2,...,5}
+\draw[shift={(0,10*\x)},color=black,line width=2pt,xstep=5] (3pt,0pt) -- (-3pt,0pt) node[left] {$\x$};
+\draw [color=black!25, xstep=1,ystep=1,line width=0.25pt] (-5,-5) grid (55,55);
+\draw [color=black!50, xstep=5,ystep=5,line width=0.5pt] (-5,-5) grid (55,55);
+\draw[->,color=black, line width=2pt] (-5,0.0) -- (55,0.0);
+\draw[->,color=black, line width=2pt] (0.0,-5) -- (0.0,55);
+\draw (53,0.0) node[below right] {$x_{1}$};
+\draw (0.0,53) node[above left ] {$x_{2}$};
+\end{tikzpicture}
+  \caption{Sketch and Shade the Feasible Region.}
+  \tablabel{sketchFeasible}
+\begin{equation*}\LP{2}{
+    \text{maximize}&z&=&\multicolumn{3}{c}{f(x_{1},x_{2})}\\
+  \text{subject to}& & & -x_1 & + &  x_2 & \leq & 2\\\notag
+                   & & &  x_1 & - & 2x_2 & \leq & 1\\\notag
+	           & & & \multicolumn{5}{c}{x_1,x_2\geq0}
+	 }
+\end{equation*}
+\end{figure*}
+%% End Exercise
+\end{enumerate}

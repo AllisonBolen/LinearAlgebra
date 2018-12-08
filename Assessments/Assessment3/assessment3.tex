@@ -1,0 +1,232 @@
+\begin{enumerate}
+\item
+  Explain the Two-Phase Simplex Algorithm\footnote{You may choose to explain the ``Big M'' method if
+  you prefer.}. In particular, 
+\begin{itemize}
+  \item    Explain the purpose of the Two Phase Simplex Algorithm,
+  \item    Explain the implementation of the Two Phase Simplex Algorithm, and
+  \item    Explain the various possible outcomes and their consequences.
+\end{itemize}
+
+\item
+An LP has objective function \( \text{maximize } 3x_1 + 2 x_2 - x_3 \), slack
+variables \(s_1\), \(s_2\), \(s_3\), and \(s_4\), four main constraints, and all variables
+non-negative.  
+
+\begin{enumerate}
+  \item At any basic feasible solution, how many variables are basic and how many are non-basic?
+  \item The current point is $(x_1,x_2,x_3,s_1,s_2,s_3,s_4)=(0,0,6,0,8,3,5)$. Is this a basic point
+  or not, and how can you tell?
+
+  \item You have the following options for moving from the current point, 
+\begin{align*}
+  \Vec{d}_1&=\begin{pmatrix*}[r]1& 0& 4& 0&           -3& 2& \phantom{-}1\end{pmatrix*}\\
+  \Vec{d}_2&=\begin{pmatrix*}[r]0& 1& 1& 0& \phantom{-}1& 1& \phantom{-}1\end{pmatrix*}\\
+  \Vec{d}_3&=\begin{pmatrix*}[r]0& 0& 2& 1&           -1& 1&           -2\end{pmatrix*}.
+\end{align*}
+\begin{enumerate}
+	\item Which direction(s) are directions of improvement, and how can you tell?
+	\item Explain how you can tell that the LP is unbounded.
+\end{enumerate}
+\end{enumerate}
+
+\clearpage
+\item Professor~Emmet (Doc) Brown is writing a grant proposal
+that involves implementing a new algorithm he has developed.  He estimates that
+it would require at least 1000~hours of programming by a professional consultant, but he can
+substitute undergraduate programmers or graduate programmers.  The costs for an
+hour of time for undergraduates, graduates, and consultants are, respectively,
+\$4, \$10, and \$25.  
+
+Doc's experience is that an hour of undergraduate time is approximately
+equivalent to \nfrac{1}{5}~of an hour of professional time, and graduate student time is
+roughly equivalent to \nfrac{3}{10}~hours of professional time.  
+
+Programmers also require oversight.  Doc estimates that he will need to
+invest \nfrac{1}{5}, \nfrac{1}{10}, and \nfrac{1}{20}~hour of his own time for each hour of programming
+from undergrads, grads, and professionals;  he only has 164 hours to devote to
+the programming aspects of the project, however.
+
+Finally, due to the number of graduate students available, Doc can use at
+most 500~hours of graduate student time.
+
+\begin{enumerate}
+\item Set up and solve a linear program for this situation.
+\item Based on your final tableau, how much money could be saved if Doc
+could find more of his own time to contribute to the project?
+\end{enumerate}
+
+\item
+  Let \textbf{P} be the linear program
+  \begin{equation*}
+    \LP{2}{
+    \text{maximize}  &z&= & 2x_1 &+& 3x_2 &      &    \\
+    \text{subject to}& &  & 4x_1 &+& 3x_2 & \leq & 15 \\
+                     & &  &  x_1 &+&  x_2 & \leq &  4 \\
+		     & &  &\multicolumn{5}{c}{x_1, x_2 \geq 0}
+			 }
+  \end{equation*}
+
+  Classify each of the following solutions as one of:
+  \begin{itemize}
+    \item infeasible solution,
+    \item feasible boundary solution, or
+    \item feasible interior solution.
+  \end{itemize}
+
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item $\Vec{x} = \begin{bmatrix}3\\3\end{bmatrix}$\label{33}
+      \item $\Vec{x} = \begin{bmatrix}-1\\2\end{bmatrix}$\label{-12}
+      \item $\Vec{x} = \begin{bmatrix}1\\1\end{bmatrix}$\label{11}
+      \item $\Vec{x} = \begin{bmatrix}2\\2\end{bmatrix}$\label{22}
+    \end{enumerate}
+  \end{multicols}
+\clearpage
+\item
+  Farmer John and Farmer Jane want to plant some or all of their 45~acres
+  with wheat and/or corn.  They estimate that each acre of wheat will
+  yield \$300~profit, while each acre of corn will yield \$200.  In their
+  experience, labor (workers per acre) and fertilizer (tons per acre) required are as follows:\\[1ex]
+  \begin{center}
+    \begin{tabular}{lccc}
+      \toprule
+      & wheat	& corn	& available \\ \midrule
+      labor	& 3	& 2	& 100 \\
+      fertilizer& 2	& 4	& 120 \\
+      \bottomrule
+    \end{tabular}\\[1ex]
+  \end{center}
+
+  This yields the following linear program:
+  \begin{equation*}
+    \LP{2}{
+    \text{maximize }\quad  & 200w &{}+{}& 300c &      &     \\
+    \text{subject to }\quad&   3w &{}+{}&   2c & \leq & 100 \\
+                           &   2w &{}+{}&   4c & \leq & 120 \\
+                           &    w &{}+{}&    c & \leq &  45 \\
+			   &   \multicolumn{5}{c}{c,w\ge 0}
+			 }
+   \end{equation*}
+
+  Jane adds slack variables and uses the simplex algorithm to arrive at the following optimal
+  tableau: (NOTE: You do not need to re-solve this if you do not wish to do so.  It is
+  correct!)\\
+  \begin{equation*}
+    \begin{array}{r|rr|rrr|r}
+	z &x_1&x_2& s_1 & s_2    &s_3&RHS \\ \hline
+	1 & 0 & 0 &          25  & \nfrac{125}{2} & 0 & 10,000 \\ %\hline
+	0 & 1 & 0 &\nfrac{ 1}{2} & \nfrac{-1}{4}  & 0 &     20 \\
+	0 & 0 & 1 &\nfrac{-1}{4} & \nfrac{ 3}{8}  & 0 &     20 \\
+	0 & 0 & 0 &\nfrac{-1}{4} & \nfrac{-1}{8}  & 1 &      5 
+    \end{array}
+  \end{equation*}
+
+  Answer the following questions based on the above tableau:
+  \begin{enumerate}
+    \item If John and Jane have the opportunity to rent more land for
+      planting at \$2000~per acre for the growing season, should they?
+      Explain.\label{land}
+    \item John and Jane find a fertilizer distributor who can sell them
+      fertilizer at \$55~per ton.  Should they purchase more?\label{fertilizer}
+    \item How much additional profit (if any) could John and Jane expect if
+      they had an additional 10 workers?\label{labor}
+    \item For parts~\ref{land} and~\ref{fertilizer}, what
+      is the maximum John and Jane could rent/purchase and still have the same
+      optimal basis?
+    \item Look again at part~\ref{labor}.  If John and
+      Jane have 10 extra workers, how much of their land should they plant
+      with corn versus wheat?
+  \end{enumerate}
+
+\clearpage
+\item
+  Consider the sketch of the feasible region and solutions (points) shown below, where the arrows
+  indicate the feasible side for each constraint:\\
+ \begin{figure}[ht]
+    \definecolor{gray25}{rgb}{0.25,0.25,0.25}
+    \definecolor{gray33}{rgb}{0.33,0.33,0.33}
+    \definecolor{gray75}{rgb}{0.75,0.75,0.75}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.75cm,y=0.75cm]
+    \draw [color=gray75,, xstep=1,ystep=1] (-1,-1) grid (20,16);
+    \draw[->,color=black] (-1,0) -- (20,0);
+    \foreach \x in {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+      \draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\scriptsize $\x$};
+    \draw[color=black] (18.92,0.17) node [anchor=south west] { $x_1$};
+    \draw[->,color=black] (0,-1) -- (0,16);
+    \foreach \y in {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
+      \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\scriptsize $\y$};
+    \draw[color=black] (0.18,15.17) node [anchor=west] { $x_2$};
+    \draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+    \clip(-1,-1) rectangle (20,16);
+    \draw[smooth,samples=100,domain=6.0:20.0] plot(\x,{2/3*((\x)-6)});
+    \draw[smooth,samples=100,domain=11.0:20.0] plot(\x,{5/2*((\x)-11)});
+    \draw[smooth,samples=100,domain=12.0:18.0] plot(\x,{(-3*((\x)-18))});
+    \draw[smooth,samples=100,domain=0.0:8.0] plot(\x,{(2*(\x)+5)});
+    \draw[smooth,samples=100,domain=0.0:20.0] plot(\x,{((-1)/8*((\x)-3)+16)});
+    \begin{small}
+    \fill [color=gray33] (0,0) circle (0.10);
+    \draw[color=gray33] (0.44,0.53) node {$P_{0}$};
+    \fill [color=gray33] (5,2) circle (0.1);
+    \draw[color=gray33] (5.42,2.55) node {$P_{1}$};
+    \fill [color=gray33] (6,0) circle (0.1);
+    \draw[color=gray33] (6.00,0.53) node {$P_{2}$};
+    \fill [color=gray25] (10,2.67) circle (0.1);
+    \draw[color=gray25] (10.4,2.3) node {$P_{3}$};
+    \fill [color=gray33] (8,4) circle (0.1);
+    \draw[color=gray33] (8.42,4.53) node {$P_{4}$};
+    \fill [color=gray25] (12.8181,4.5454) circle (0.1);
+    \draw[color=gray25] (13.0,4.20) node {$P_{5}$};
+    \fill [color=gray25] (15.82,6.55) circle (0.1);
+    \draw[color=gray25] (16.32,6.55) node {$P_{6}$};
+    \fill [color=gray33] (0,5) circle (0.1);
+    \draw[color=gray33] (0.30,4.50) node {$P_{7}$};
+    \fill [color=gray33] (1,5) circle (0.1);
+    \draw[color=gray33] (1.42,4.69) node {$P_{8}$};
+    \fill [color=gray33] (6,7) circle (0.1);
+    \draw[color=gray33] (6.43,7.54) node {$P_{9}$};
+    \fill [color=gray33] (11,8) circle (0.1);
+    \draw[color=gray33] (11.59,8.53) node {$P_{10}$};
+    \fill [color=gray25] (14.8181,9.5454) circle (0.1);
+    \draw[color=gray25] (15.40,9.21) node {$P_{11}$};
+    \fill [color=gray33] (2,9) circle (0.1);
+    \draw[color=gray33] (2.57,9.00) node {$P_{12}$};
+    \fill [color=gray33] (6,10) circle (0.1);
+    \draw[color=gray33] (6.58,10.55) node {$P_{13}$};
+    \fill [color=gray25] (4,13) circle (0.1);
+    \draw[color=gray25] (4.59,12.74) node {$P_{14}$};
+    \fill [color=gray33] (10,13) circle (0.1);
+    \draw[color=gray33] (10.58,13.52) node {$P_{15}$};
+    \fill [color=gray25] (5.35,15.71) circle (0.1);
+    \draw[color=gray25] (5.89,15.38) node {$P_{16}$};
+    \fill [color=gray33] (13,14) circle (0.1);
+    \draw[color=gray33] (12.64,13.57) node {$P_{17}$};
+    \fill [color=gray25] (13.09,14.74) circle (0.1);
+    \draw[color=gray25] (13.65,15.26) node {$P_{18}$};
+    \draw [->] (18,8) -- (17,9.5);
+    \draw [->] (17,15) -- (15,16);
+    \draw [->] (14,12) -- (12.5,11.5);
+    \draw [->] (11,15) -- (10.875,14);
+    \draw [->] ( 3,11) -- (3.80,10.60);
+    \end{small}
+    \end{tikzpicture}
+   \caption{Feasible Region and Points}
+   \figlabel{feasible}
+ \end{figure}
+ \begin{enumerate}
+   \item Shade the feasible region and outline the boundary of the region.
+   \item Which of the following successions of solutions could have arisen from:
+   (1)~the simplex algorithm, (2)~an interior point algorithm, or
+   (3)~neither?  Be sure to explain how you determined your answer.
+   \begin{multicols}{2}
+     \begin{enumerate}
+       \item $P_{0}, P_{2}, P_{3}, P_{5}, P_{11}$ \label{P0P2P3P5P11}
+       \item $P_{1}, P_{9}, P_{13}, P_{15}, P_{17}$ \label{P1P9P13P15P17}
+       \item $P_{8}, P_{9}, P_{13}, P_{14}, P_{16}$ \label{P8P9P13P14P16}
+       \item $P_{0}, P_{7}, P_{16}, P_{18}$ \label{P0P7P16P18}
+       \item $P_{0}, P_{2}, P_{5}, P_{6}, P_{11}$ \label{P0P2P5P6P11}
+     \end{enumerate}
+   \end{multicols}
+ \end{enumerate}
+\end{enumerate}
+\endinput

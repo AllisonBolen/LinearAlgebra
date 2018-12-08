@@ -1,0 +1,94 @@
+\begin{enumerate}
+ %%\begin{exercise}
+    \item 
+      Perform one step of the affine scaling interior point algorithm for the following LP, with
+      current solution as shown:\\
+
+      \begin{align*}
+	\LP{3}{
+	  \text{maximize:}  &  x_1 & + & 2x_2 & + &  x_3 &   &   \\
+	  \text{subject to:}&  x_1 & + & 2x_2 & + & 2x_3 & = & 7 \\
+	  &  x_1 &   &      & + & 2x_3 & = & 3 \\
+	  & \multicolumn{5}{c}{x_1, x_2, x_3 \geq0}
+	}
+      \end{align*}
+
+      \begin{equation*}
+	\Vec{x}_{c} = \begin{bmatrix}1.0\\2.0\\1.0\end{bmatrix}
+      \end{equation*}
+ %%\end{exercise}
+ %%\begin{exercise}
+\item 
+  Let \(f:\R^{2}\to\R\) be defined by
+\begin{equation*}
+  f(x,y)=x^{4}-12x^{3}+54x^{2}+y^{2}-108x+2y+82.
+\end{equation*}
+The gradient, \(\nabla f(x,y)\)
+and Hessian,  \(\nabla^{2}f(x,y)\)
+are given by
+\begin{align*}
+  \nabla    f(x,y)&=
+  \begin{bmatrix}
+  4 x^3-36 x^2+108 x-108\\2 y+2  
+  \end{bmatrix}
+&
+  \nabla^{2}f(x,y)&=
+  \begin{bmatrix}
+ 12 x^2-72 x+108 & 0 \\
+          0      & 2 
+  \end{bmatrix}
+%
+\end{align*}
+
+\begin{enumerate}
+  \item  Verify that \(\Vec{x}=\begin{bmatrix} 3\\-1 \end{bmatrix}\) is a global minimum for \(f\).
+  \item  Perform two steps to the steepest descent algorithm for \(f\) with initial point
+\(\Vec{x}=\begin{bmatrix} 1\\1 \end{bmatrix}\).
+\item  Perform two steps to Newton's method for \(f\) with initial point
+\(\Vec{x}=\begin{bmatrix} 1\\1 \end{bmatrix}\).
+\item Compare the results of Newton's method and steepest descent.
+\end{enumerate}
+ %%\end{exercise}
+\clearpage
+ %%\begin{exercise}
+\item Briefly explain the KKT conditions and why they make sense for an NLP of the form
+  \begin{align*}
+    \LP{2}{
+      \text{Maximize:}  & f(&x_1&,&x_2&) \\
+      \text{Subject to:}& g(&x_1&,&x_2&)&\le&0.
+    }
+  \end{align*}
+ %%\end{exercise}
+ %%\begin{exercise}
+\item 
+  Let \(f:\R^{2}\to\R\) be defined by
+\begin{equation*}
+  f(x,y)=x^{4}-12x^{3}+54x^{2}+y^{2}-108x+2y+82.
+\end{equation*}
+The gradient, \(\nabla f(x,y)\)
+and Hessian,  \(\nabla^{2}f(x,y)\)
+are given by
+\begin{align*}
+  \nabla    f(x,y)&=
+  \begin{bmatrix}
+  4 x^3-36 x^2+108 x-108\\2 y+2  
+  \end{bmatrix}
+&
+  \nabla^{2}f(x,y)&=
+  \begin{bmatrix}
+ 12 x^2-72 x+108 & 0 \\
+          0      & 2 
+  \end{bmatrix}
+%
+\end{align*}
+
+Find \(x\), \(y\), and \(\lambda\) that satisfy the KKT conditions for the NLP
+  \begin{align*}
+    \LP{2}{
+      \text{Minimize:}  & f(&x&,&y&) \\
+      \text{Subject to:}&   &x^{2}&+&y^{2}&&\le&9.
+    }
+  \end{align*}
+ %%\end{exercise}
+
+\end{enumerate}
