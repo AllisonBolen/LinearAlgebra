@@ -1,0 +1,275 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9829,        265]
+NotebookOptionsPosition[      8008,        230]
+NotebookOutlinePosition[      8360,        246]
+CellTagsIndexPosition[      8317,        243]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Assesment", ":", " ", "3"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Question", ":", " ", "2"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Part", " ", "C"}], " ", "*)"}], "\[IndentingNewLine]"}]], "Input",\
+
+ CellChangeTimes->{{3.753287658060416*^9, 3.7532876776298447`*^9}, {
+  3.75328771409863*^9, 3.753287753969809*^9}, {3.753287787868232*^9, 
+  3.753287806113456*^9}},
+ CellLabel->
+  "In[4135]:=",ExpressionUUID->"a11daf82-ac58-4fa8-b0c7-fb3bb39b89bf"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Direction", " ", "vector", " ", 
+    RowBox[{"one", ":"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "The", " ", "dot", " ", "product", " ", "of", " ", "the", " ", 
+    "coeficiant", " ", "vector", " ", "and", " ", "the", " ", "direction", 
+    " ", "vector", " ", "shows", " ", "improvement", " ", "or", " ", "not"}], 
+   " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"cfv", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{"3", ",", "2", ",", 
+      RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", " ", "0"}], 
+     "}"}]}], "\[IndentingNewLine]", 
+   RowBox[{"dirOne", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "0", ",", "4", ",", "0", ",", 
+      RowBox[{"-", "3"}], ",", "2", ",", "1"}], "}"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"improv", " ", "=", " ", 
+    RowBox[{"cfv", ".", "dirOne"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7532878108490458`*^9, 3.7532878672681026`*^9}, {
+  3.7532879459450197`*^9, 3.75328805356697*^9}},
+ CellLabel->
+  "In[4143]:=",ExpressionUUID->"1e819b54-36f0-4902-a9cd-77ad23af98fc"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"3", ",", "2", ",", 
+   RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", "0"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.75328803612567*^9, 3.753288069576399*^9}},
+ CellLabel->
+  "Out[4143]=",ExpressionUUID->"caf363a5-36a2-47d7-9ba3-2cfb395331cb"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "0", ",", "4", ",", "0", ",", 
+   RowBox[{"-", "3"}], ",", "2", ",", "1"}], "}"}]], "Output",
+ CellChangeTimes->{{3.75328803612567*^9, 3.753288069589923*^9}},
+ CellLabel->
+  "Out[4144]=",ExpressionUUID->"9aa8a9eb-0252-4739-9baa-de5a7042a694"],
+
+Cell[BoxData[
+ RowBox[{"-", "1"}]], "Output",
+ CellChangeTimes->{{3.75328803612567*^9, 3.7532880696002607`*^9}},
+ CellLabel->
+  "Out[4145]=",ExpressionUUID->"4c1d3391-fb4b-4966-bf51-4e03b968302c"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "The", " ", "result", " ", "is", " ", "negative", " ", "so", " ", "this", 
+    " ", "is", " ", "not", " ", "a", " ", "direction", " ", "of", " ", 
+    RowBox[{"improvment", "."}]}], " ", "*)"}], "\[IndentingNewLine]"}]], \
+"Input",
+ CellChangeTimes->{{3.7532880611043053`*^9, 3.7532881034587603`*^9}},
+ CellLabel->
+  "In[4146]:=",ExpressionUUID->"669c4927-1393-44f5-b46a-7b5b4f39ca41"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Direction", " ", "vector", " ", 
+    RowBox[{"two", ":"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "The", " ", "dot", " ", "product", " ", "of", " ", "the", " ", 
+    "coeficiant", " ", "vector", " ", "and", " ", "the", " ", "direction", 
+    " ", "vector", " ", "shows", " ", "improvement", " ", "or", " ", "not"}], 
+   " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"cfv", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{"3", ",", "2", ",", 
+      RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", " ", "0"}], 
+     "}"}]}], "\[IndentingNewLine]", 
+   RowBox[{"dirTwo", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{
+     "0", ",", "1", ",", "1", ",", "0", ",", "1", ",", "1", ",", "1"}], 
+     "}"}]}], "\[IndentingNewLine]", 
+   RowBox[{"improv", " ", "=", " ", 
+    RowBox[{"cfv", ".", "dirTwo"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.753288112563633*^9, 3.753288148810195*^9}},
+ CellLabel->
+  "In[4147]:=",ExpressionUUID->"edad7fbd-19d6-42f5-9731-cd437cc71256"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"3", ",", "2", ",", 
+   RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", "0"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.753288152046669*^9},
+ CellLabel->
+  "Out[4147]=",ExpressionUUID->"9769f64f-aba0-4bbb-883a-e354d432677e"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0", ",", "1", ",", "1", ",", "0", ",", "1", ",", "1", ",", "1"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.753288152051154*^9},
+ CellLabel->
+  "Out[4148]=",ExpressionUUID->"d4c73d5d-1f98-44af-9407-42cec5a1acc1"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.753288152055242*^9},
+ CellLabel->
+  "Out[4149]=",ExpressionUUID->"25d5fd6c-a1d9-4399-8ad1-d85400c3854d"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+  "The", " ", "result", " ", "is", " ", "positive", " ", "and", " ", "thus", 
+   " ", "this", " ", "is", " ", "a", " ", "direction", " ", "of", " ", 
+   "improvement"}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.7532881571685143`*^9, 
+  3.753288179401149*^9}},ExpressionUUID->"2eeff1ce-e400-4c8a-bf5a-\
+6c61be06269a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Direction", " ", "vector", " ", 
+    RowBox[{"three", ":"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "The", " ", "dot", " ", "product", " ", "of", " ", "the", " ", 
+    "coeficiant", " ", "vector", " ", "and", " ", "the", " ", "direction", 
+    " ", "vector", " ", "shows", " ", "improvement", " ", "or", " ", "not"}], 
+   " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"cfv", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{"3", ",", "2", ",", 
+      RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", " ", "0"}], 
+     "}"}]}], "\[IndentingNewLine]", 
+   RowBox[{"dirThree", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "2", ",", "1", ",", 
+      RowBox[{"-", "1"}], ",", "1", ",", 
+      RowBox[{"-", "2"}]}], "}"}]}], "\[IndentingNewLine]", 
+   RowBox[{"improv", " ", "=", " ", 
+    RowBox[{"cfv", ".", "dirThree"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7532881889307003`*^9, 3.753288225873849*^9}},
+ CellLabel->
+  "In[4150]:=",ExpressionUUID->"2075c90f-9166-43dc-a71e-acf08574f516"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"3", ",", "2", ",", 
+   RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", "0"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.753288226650861*^9},
+ CellLabel->
+  "Out[4150]=",ExpressionUUID->"616c1512-8712-432c-9eb6-aa9e8024a8dd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0", ",", "0", ",", "2", ",", "1", ",", 
+   RowBox[{"-", "1"}], ",", "1", ",", 
+   RowBox[{"-", "2"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.753288226655525*^9},
+ CellLabel->
+  "Out[4151]=",ExpressionUUID->"cbbec703-6bfa-4cf8-85b1-60fc4b5b4f96"],
+
+Cell[BoxData[
+ RowBox[{"-", "2"}]], "Output",
+ CellChangeTimes->{3.753288226659952*^9},
+ CellLabel->
+  "Out[4152]=",ExpressionUUID->"6c72e115-d9b8-40dd-ab6a-768ae1965450"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+  "The", " ", "result", " ", "is", " ", "negative", " ", "so", " ", "this", 
+   " ", "is", " ", "not", " ", "a", " ", "direction", " ", "of", " ", 
+   RowBox[{"imrovement", "."}]}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.7532882351322737`*^9, 3.753288272364949*^9}, 
+   3.753288339322773*^9},ExpressionUUID->"e150becf-26d3-44fa-859f-\
+5910af159d43"]
+},
+WindowSize->{808, 698},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 574, 13, 94, "Input",ExpressionUUID->"a11daf82-ac58-4fa8-b0c7-fb3bb39b89bf"],
+Cell[CellGroupData[{
+Cell[1157, 37, 1142, 27, 136, "Input",ExpressionUUID->"1e819b54-36f0-4902-a9cd-77ad23af98fc"],
+Cell[2302, 66, 294, 7, 34, "Output",ExpressionUUID->"caf363a5-36a2-47d7-9ba3-2cfb395331cb"],
+Cell[2599, 75, 291, 6, 34, "Output",ExpressionUUID->"9aa8a9eb-0252-4739-9baa-de5a7042a694"],
+Cell[2893, 83, 196, 4, 34, "Output",ExpressionUUID->"4c1d3391-fb4b-4966-bf51-4e03b968302c"]
+}, Open  ]],
+Cell[3104, 90, 446, 10, 52, InheritFromParent,ExpressionUUID->"669c4927-1393-44f5-b46a-7b5b4f39ca41"],
+Cell[CellGroupData[{
+Cell[3575, 104, 1074, 26, 136, "Input",ExpressionUUID->"edad7fbd-19d6-42f5-9731-cd437cc71256"],
+Cell[4652, 132, 271, 7, 34, "Output",ExpressionUUID->"9769f64f-aba0-4bbb-883a-e354d432677e"],
+Cell[4926, 141, 252, 6, 34, "Output",ExpressionUUID->"d4c73d5d-1f98-44af-9407-42cec5a1acc1"],
+Cell[5181, 149, 154, 3, 34, "Output",ExpressionUUID->"25d5fd6c-a1d9-4399-8ad1-d85400c3854d"]
+}, Open  ]],
+Cell[5350, 155, 361, 8, 30, "Input",ExpressionUUID->"2eeff1ce-e400-4c8a-bf5a-6c61be06269a"],
+Cell[CellGroupData[{
+Cell[5736, 167, 1114, 26, 136, "Input",ExpressionUUID->"2075c90f-9166-43dc-a71e-acf08574f516"],
+Cell[6853, 195, 271, 7, 34, "Output",ExpressionUUID->"616c1512-8712-432c-9eb6-aa9e8024a8dd"],
+Cell[7127, 204, 287, 7, 34, "Output",ExpressionUUID->"cbbec703-6bfa-4cf8-85b1-60fc4b5b4f96"],
+Cell[7417, 213, 171, 4, 34, "Output",ExpressionUUID->"6c72e115-d9b8-40dd-ab6a-768ae1965450"]
+}, Open  ]],
+Cell[7603, 220, 401, 8, 30, "Input",ExpressionUUID->"e150becf-26d3-44fa-859f-5910af159d43"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

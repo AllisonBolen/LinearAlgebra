@@ -23,7 +23,12 @@ non-negative.
 A. There will always be 4 basic and 3 non basic variables at an feasible solution for this LP
 B. The current point is (x1,x2,x3,s1,s2,s3,s4)=(0,0,6,0,8,3,5). Is this a basic point or not, and how can you tell?
 This point is basic because it is all non negative values.
-C. ************************
+C. The objective function coefficient vector is [3,2,-1,0,0,0,0]. Its dot product with a direction vector gives the amount that moving in that direction would change the objective function value, so positive dot product means objective would increase, negative dot product means objective would decrease.
+
+For ii, unbounded LP would mean a direction of improvement for the objective that never causes any variables (decision or slack) to become negative.
+- I: Coefficient vectors = (3,2,-1,0,0,0)
+
+- II:
 
 #Question 3
 A. Set up of word problem:
@@ -74,8 +79,8 @@ E. Look again at part 5c. If John and Jane have 10 extra workers, how much of th
 should they plant with corn versus wheat?
 
 #Question 6
-A. neither , you have interior points and border points
-B. interior, all points are in the interior of the feasible region
-C. neither , you have interior points and border points
-D.simplex all points are on the border
+A. Neither , you have interior points and border points
+B. Interior, all points are in the interior of the feasible region
+C. Neither , you have interior points and border points
+D. Simplex all points are on the border
 E. Neither, infeasible
