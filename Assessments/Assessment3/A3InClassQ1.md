@@ -71,7 +71,7 @@ they purchase more?
 * Yes, 55 < 125/2.
 C. How much additional profit (if any) could John and Jane expect if they had an additional
 10 workers?
-* If they hired an additional 10 workers their total workers would be 110 and their profit would go up by 25*10 because the shadow price of a worker is 25 per worker they would gain 250 in profit.
+* If they hired an additional 10 workers their total workers would be 110 and their profit would go up by 25*10 because the shadow price of a worker is 25 per worker they would gain an additional 250 in profit.
 D. For parts 5a and 5b, what is the maximum John and Jane could rent/purchase and still
 have the same optimal basis?
 Using the final tableau that they computed you cant determine how
@@ -91,10 +91,26 @@ You would do the same process for the land column and RHS. Resulting in
 dl * 0 >= -20
 dl * 0 >= -20
 dl >= -5
-Where dl is the change in land. Though I am not entirely sure how to interpret this result. You cant buy any more land without changing the basis. 
+Where dl is the change in land. Though I am not entirely sure how to interpret this result. You cant buy anymore land without changing the basis.
 E. Look again at part 5c. If John and Jane have 10 extra workers, how much of their land
 should they plant with corn versus wheat?
-
+You can find the new final RHS by taking the current RHS and the column for labor and replacing deltaLabor with 10:
+20 +  deltaLabor * 1/2
+20 +  deltaLabor * -1/4
+5 +  deltaLabor * -1/4
+Then:
+20 +  10 * 1/2
+20 +  10 * -1/4
+5 +  10 * -1/4
+=
+20 +  10 * 1/2
+20 +  10 * -1/4
+5 +  10 * -1/4
+=
+25
+17.5
+2.5
+Where they would want to plant 25 acres of wheat and 17.5 acres of corn and have 2.5 acres of land left over, with a new optimum at 10250$.
 #Question 6
 A. Neither , you have interior points and border points
 B. Interior, all points are in the interior of the feasible region
