@@ -20,15 +20,15 @@ WindowFrame->Normal*)
 Notebook[{
 Cell[BoxData[
  RowBox[{
-  RowBox[{"(*", " ", 
-   RowBox[{"Assesment", ":", " ", "3"}], " ", "*)"}], "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", 
-   RowBox[{"Question", ":", " ", "2"}], " ", "*)"}], "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", 
+  RowBox[{"(*", " ",
+   RowBox[{"Assesment", ":", " ", "3"}], " ", "*)"}], "\[IndentingNewLine]",
+  RowBox[{"(*", " ",
+   RowBox[{"Question", ":", " ", "2"}], " ", "*)"}], "\[IndentingNewLine]",
+  RowBox[{"(*", " ",
    RowBox[{"Part", " ", "C"}], " ", "*)"}], "\[IndentingNewLine]"}]], "Input",\
 
  CellChangeTimes->{{3.753287658060416*^9, 3.7532876776298447`*^9}, {
-  3.75328771409863*^9, 3.753287753969809*^9}, {3.753287787868232*^9, 
+  3.75328771409863*^9, 3.753287753969809*^9}, {3.753287787868232*^9,
   3.753287806113456*^9}},
  CellLabel->
   "In[4135]:=",ExpressionUUID->"a11daf82-ac58-4fa8-b0c7-fb3bb39b89bf"],
@@ -37,27 +37,27 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"(*", 
-   RowBox[{"Direction", " ", "vector", " ", 
-    RowBox[{"one", ":"}]}], " ", "*)"}], "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", 
+  RowBox[{"(*",
+   RowBox[{"Direction", " ", "vector", " ",
+    RowBox[{"one", ":"}]}], " ", "*)"}], "\[IndentingNewLine]",
+  RowBox[{"(*", " ",
    RowBox[{
-   "The", " ", "dot", " ", "product", " ", "of", " ", "the", " ", 
-    "coeficiant", " ", "vector", " ", "and", " ", "the", " ", "direction", 
-    " ", "vector", " ", "shows", " ", "improvement", " ", "or", " ", "not"}], 
-   " ", "*)"}], "\[IndentingNewLine]", 
+   "The", " ", "dot", " ", "product", " ", "of", " ", "the", " ",
+    "coeficiant", " ", "vector", " ", "and", " ", "the", " ", "direction",
+    " ", "vector", " ", "shows", " ", "improvement", " ", "or", " ", "not"}],
+   " ", "*)"}], "\[IndentingNewLine]",
   RowBox[{
-   RowBox[{"cfv", " ", "=", " ", 
-    RowBox[{"{", 
-     RowBox[{"3", ",", "2", ",", 
-      RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", " ", "0"}], 
-     "}"}]}], "\[IndentingNewLine]", 
-   RowBox[{"dirOne", " ", "=", " ", 
-    RowBox[{"{", 
-     RowBox[{"1", ",", "0", ",", "4", ",", "0", ",", 
-      RowBox[{"-", "3"}], ",", "2", ",", "1"}], "}"}]}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"improv", " ", "=", " ", 
+   RowBox[{"cfv", " ", "=", " ",
+    RowBox[{"{",
+     RowBox[{"3", ",", "2", ",",
+      RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", " ", "0"}],
+     "}"}]}], "\[IndentingNewLine]",
+   RowBox[{"dirOne", " ", "=", " ",
+    RowBox[{"{",
+     RowBox[{"1", ",", "0", ",", "4", ",", "0", ",",
+      RowBox[{"-", "3"}], ",", "2", ",", "1"}], "}"}]}],
+   "\[IndentingNewLine]",
+   RowBox[{"improv", " ", "=", " ",
     RowBox[{"cfv", ".", "dirOne"}]}]}]}]], "Input",
  CellChangeTimes->{{3.7532878108490458`*^9, 3.7532878672681026`*^9}, {
   3.7532879459450197`*^9, 3.75328805356697*^9}},
@@ -65,17 +65,17 @@ Cell[BoxData[
   "In[4143]:=",ExpressionUUID->"1e819b54-36f0-4902-a9cd-77ad23af98fc"],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"3", ",", "2", ",", 
-   RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", "0"}], 
+ RowBox[{"{",
+  RowBox[{"3", ",", "2", ",",
+   RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", "0"}],
   "}"}]], "Output",
  CellChangeTimes->{{3.75328803612567*^9, 3.753288069576399*^9}},
  CellLabel->
   "Out[4143]=",ExpressionUUID->"caf363a5-36a2-47d7-9ba3-2cfb395331cb"],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"1", ",", "0", ",", "4", ",", "0", ",", 
+ RowBox[{"{",
+  RowBox[{"1", ",", "0", ",", "4", ",", "0", ",",
    RowBox[{"-", "3"}], ",", "2", ",", "1"}], "}"}]], "Output",
  CellChangeTimes->{{3.75328803612567*^9, 3.753288069589923*^9}},
  CellLabel->
@@ -90,10 +90,10 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"(*", " ", 
+  RowBox[{"(*", " ",
    RowBox[{
-   "The", " ", "result", " ", "is", " ", "negative", " ", "so", " ", "this", 
-    " ", "is", " ", "not", " ", "a", " ", "direction", " ", "of", " ", 
+   "The", " ", "result", " ", "is", " ", "negative", " ", "so", " ", "this",
+    " ", "is", " ", "not", " ", "a", " ", "direction", " ", "of", " ",
     RowBox[{"improvment", "."}]}], " ", "*)"}], "\[IndentingNewLine]"}]], \
 "Input",
  CellChangeTimes->{{3.7532880611043053`*^9, 3.7532881034587603`*^9}},
@@ -104,44 +104,44 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"(*", 
-   RowBox[{"Direction", " ", "vector", " ", 
-    RowBox[{"two", ":"}]}], " ", "*)"}], "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", 
+  RowBox[{"(*",
+   RowBox[{"Direction", " ", "vector", " ",
+    RowBox[{"two", ":"}]}], " ", "*)"}], "\[IndentingNewLine]",
+  RowBox[{"(*", " ",
    RowBox[{
-   "The", " ", "dot", " ", "product", " ", "of", " ", "the", " ", 
-    "coeficiant", " ", "vector", " ", "and", " ", "the", " ", "direction", 
-    " ", "vector", " ", "shows", " ", "improvement", " ", "or", " ", "not"}], 
-   " ", "*)"}], "\[IndentingNewLine]", 
+   "The", " ", "dot", " ", "product", " ", "of", " ", "the", " ",
+    "coeficiant", " ", "vector", " ", "and", " ", "the", " ", "direction",
+    " ", "vector", " ", "shows", " ", "improvement", " ", "or", " ", "not"}],
+   " ", "*)"}], "\[IndentingNewLine]",
   RowBox[{
-   RowBox[{"cfv", " ", "=", " ", 
-    RowBox[{"{", 
-     RowBox[{"3", ",", "2", ",", 
-      RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", " ", "0"}], 
-     "}"}]}], "\[IndentingNewLine]", 
-   RowBox[{"dirTwo", " ", "=", " ", 
-    RowBox[{"{", 
+   RowBox[{"cfv", " ", "=", " ",
+    RowBox[{"{",
+     RowBox[{"3", ",", "2", ",",
+      RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", " ", "0"}],
+     "}"}]}], "\[IndentingNewLine]",
+   RowBox[{"dirTwo", " ", "=", " ",
+    RowBox[{"{",
      RowBox[{
-     "0", ",", "1", ",", "1", ",", "0", ",", "1", ",", "1", ",", "1"}], 
-     "}"}]}], "\[IndentingNewLine]", 
-   RowBox[{"improv", " ", "=", " ", 
+     "0", ",", "1", ",", "1", ",", "0", ",", "1", ",", "1", ",", "1"}],
+     "}"}]}], "\[IndentingNewLine]",
+   RowBox[{"improv", " ", "=", " ",
     RowBox[{"cfv", ".", "dirTwo"}]}]}]}]], "Input",
  CellChangeTimes->{{3.753288112563633*^9, 3.753288148810195*^9}},
  CellLabel->
   "In[4147]:=",ExpressionUUID->"edad7fbd-19d6-42f5-9731-cd437cc71256"],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"3", ",", "2", ",", 
-   RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", "0"}], 
+ RowBox[{"{",
+  RowBox[{"3", ",", "2", ",",
+   RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", "0"}],
   "}"}]], "Output",
  CellChangeTimes->{3.753288152046669*^9},
  CellLabel->
   "Out[4147]=",ExpressionUUID->"9769f64f-aba0-4bbb-883a-e354d432677e"],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"0", ",", "1", ",", "1", ",", "0", ",", "1", ",", "1", ",", "1"}], 
+ RowBox[{"{",
+  RowBox[{"0", ",", "1", ",", "1", ",", "0", ",", "1", ",", "1", ",", "1"}],
   "}"}]], "Output",
  CellChangeTimes->{3.753288152051154*^9},
  CellLabel->
@@ -154,12 +154,12 @@ Cell[BoxData["1"], "Output",
 }, Open  ]],
 
 Cell[BoxData[
- RowBox[{"(*", 
+ RowBox[{"(*",
   RowBox[{
-  "The", " ", "result", " ", "is", " ", "positive", " ", "and", " ", "thus", 
-   " ", "this", " ", "is", " ", "a", " ", "direction", " ", "of", " ", 
+  "The", " ", "result", " ", "is", " ", "positive", " ", "and", " ", "thus",
+   " ", "this", " ", "is", " ", "a", " ", "direction", " ", "of", " ",
    "improvement"}], " ", "*)"}]], "Input",
- CellChangeTimes->{{3.7532881571685143`*^9, 
+ CellChangeTimes->{{3.7532881571685143`*^9,
   3.753288179401149*^9}},ExpressionUUID->"2eeff1ce-e400-4c8a-bf5a-\
 6c61be06269a"],
 
@@ -167,45 +167,45 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"(*", 
-   RowBox[{"Direction", " ", "vector", " ", 
-    RowBox[{"three", ":"}]}], " ", "*)"}], "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", 
+  RowBox[{"(*",
+   RowBox[{"Direction", " ", "vector", " ",
+    RowBox[{"three", ":"}]}], " ", "*)"}], "\[IndentingNewLine]",
+  RowBox[{"(*", " ",
    RowBox[{
-   "The", " ", "dot", " ", "product", " ", "of", " ", "the", " ", 
-    "coeficiant", " ", "vector", " ", "and", " ", "the", " ", "direction", 
-    " ", "vector", " ", "shows", " ", "improvement", " ", "or", " ", "not"}], 
-   " ", "*)"}], "\[IndentingNewLine]", 
+   "The", " ", "dot", " ", "product", " ", "of", " ", "the", " ",
+    "coeficiant", " ", "vector", " ", "and", " ", "the", " ", "direction",
+    " ", "vector", " ", "shows", " ", "improvement", " ", "or", " ", "not"}],
+   " ", "*)"}], "\[IndentingNewLine]",
   RowBox[{
-   RowBox[{"cfv", " ", "=", " ", 
-    RowBox[{"{", 
-     RowBox[{"3", ",", "2", ",", 
-      RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", " ", "0"}], 
-     "}"}]}], "\[IndentingNewLine]", 
-   RowBox[{"dirThree", " ", "=", " ", 
-    RowBox[{"{", 
-     RowBox[{"0", ",", "0", ",", "2", ",", "1", ",", 
-      RowBox[{"-", "1"}], ",", "1", ",", 
-      RowBox[{"-", "2"}]}], "}"}]}], "\[IndentingNewLine]", 
-   RowBox[{"improv", " ", "=", " ", 
+   RowBox[{"cfv", " ", "=", " ",
+    RowBox[{"{",
+     RowBox[{"3", ",", "2", ",",
+      RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", " ", "0"}],
+     "}"}]}], "\[IndentingNewLine]",
+   RowBox[{"dirThree", " ", "=", " ",
+    RowBox[{"{",
+     RowBox[{"0", ",", "0", ",", "2", ",", "1", ",",
+      RowBox[{"-", "1"}], ",", "1", ",",
+      RowBox[{"-", "2"}]}], "}"}]}], "\[IndentingNewLine]",
+   RowBox[{"improv", " ", "=", " ",
     RowBox[{"cfv", ".", "dirThree"}]}]}]}]], "Input",
  CellChangeTimes->{{3.7532881889307003`*^9, 3.753288225873849*^9}},
  CellLabel->
   "In[4150]:=",ExpressionUUID->"2075c90f-9166-43dc-a71e-acf08574f516"],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"3", ",", "2", ",", 
-   RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", "0"}], 
+ RowBox[{"{",
+  RowBox[{"3", ",", "2", ",",
+   RowBox[{"-", "1"}], ",", "0", ",", "0", ",", "0", ",", "0"}],
   "}"}]], "Output",
  CellChangeTimes->{3.753288226650861*^9},
  CellLabel->
   "Out[4150]=",ExpressionUUID->"616c1512-8712-432c-9eb6-aa9e8024a8dd"],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"0", ",", "0", ",", "2", ",", "1", ",", 
-   RowBox[{"-", "1"}], ",", "1", ",", 
+ RowBox[{"{",
+  RowBox[{"0", ",", "0", ",", "2", ",", "1", ",",
+   RowBox[{"-", "1"}], ",", "1", ",",
    RowBox[{"-", "2"}]}], "}"}]], "Output",
  CellChangeTimes->{3.753288226655525*^9},
  CellLabel->
@@ -219,12 +219,12 @@ Cell[BoxData[
 }, Open  ]],
 
 Cell[BoxData[
- RowBox[{"(*", " ", 
+ RowBox[{"(*", " ",
   RowBox[{
-  "The", " ", "result", " ", "is", " ", "negative", " ", "so", " ", "this", 
-   " ", "is", " ", "not", " ", "a", " ", "direction", " ", "of", " ", 
+  "The", " ", "result", " ", "is", " ", "negative", " ", "so", " ", "this",
+   " ", "is", " ", "not", " ", "a", " ", "direction", " ", "of", " ",
    RowBox[{"imrovement", "."}]}], " ", "*)"}]], "Input",
- CellChangeTimes->{{3.7532882351322737`*^9, 3.753288272364949*^9}, 
+ CellChangeTimes->{{3.7532882351322737`*^9, 3.753288272364949*^9},
    3.753288339322773*^9},ExpressionUUID->"e150becf-26d3-44fa-859f-\
 5910af159d43"]
 },
@@ -272,4 +272,3 @@ Cell[7603, 220, 401, 8, 30, "Input",ExpressionUUID->"e150becf-26d3-44fa-859f-591
 *)
 
 (* End of internal cache information *)
-

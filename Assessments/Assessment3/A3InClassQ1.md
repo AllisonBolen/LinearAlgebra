@@ -26,9 +26,9 @@ This point is basic because it is all non negative values.
 C. The objective function coefficient vector is [3,2,-1,0,0,0,0]. Its dot product with a direction vector gives the amount that moving in that direction would change the objective function value, so positive dot product means objective would increase, negative dot product means objective would decrease.
 
 For ii, unbounded LP would mean a direction of improvement for the objective that never causes any variables (decision or slack) to become negative.
-- I: Coefficient vectors = (3,2,-1,0,0,0)
+- I: See [A3InclassQ2CII.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assesments/Assesment3/A3InClassQ2CII.nb) for the answers for this.
 
-- II:
+- II: You could tell that this lp is unbounded because the direction of improvement would never have any variables become negative. We can see that with direction 2 we have a valid direction of improvement however there are not any negative variables so this means that the LP is unbounded.
 
 #Question 3
 A. Set up of word problem:
@@ -65,16 +65,33 @@ D.feasible boundary.
 #Question 5:
 A. If John and Jane have the opportunity to rent more land for planting at $2000 per acre for
 the growing season, should they? Explain.
-* No, the cost of more land outweighs the profit. Since the cost of 2000$ is more than the shadow price which is 0, buying more land would not affect the optimum. We technically also have 5 acres of land left over at optimum.
+* No, the cost of more land outweighs the profit. Since the cost of 2000$ is more than the shadow price which is 0, buying more land would not affect the optimum. We technically also have 5 acres of land left over at optimum, so there is no need to buy more, land is not our limiter right now.
 B. John and Jane find a fertilizer distributor who can sell them fertilizer at $55 per ton. Should
 they purchase more?
 * Yes, 55 < 125/2.
 C. How much additional profit (if any) could John and Jane expect if they had an additional
 10 workers?
-* If they hired an additional 10 workers there total workers would be 110 and their profit would go up by 25*10 because the shadow price of a worker is 25 per worker they would gain 250 in profit
+* If they hired an additional 10 workers their total workers would be 110 and their profit would go up by 25*10 because the shadow price of a worker is 25 per worker they would gain 250 in profit.
 D. For parts 5a and 5b, what is the maximum John and Jane could rent/purchase and still
 have the same optimal basis?
-* If they rent up to  
+Using the final tableau that they computed you cant determine how
+much fertilizer to buy while maintaining the basis.
+If we take the current final RHS and the current column for
+fertilizer we can calculate the limits[20, 20, 5] + deltaF.
+[-1/4, 3/8, -1/8] >= [0,0,0] thus:
+20 - df * 1/4 >= 0
+20 + df * 3/8 >= 0
+5 - df * 1/8  >= 0
+Then:
+df >= 80
+df >= -53.3
+df >= 40
+* They can rent up to 40 more tons of fertilizer with out changing the basis.
+You would do the same process for the land column and RHS. Resulting in
+dl * 0 >= -20
+dl * 0 >= -20
+dl >= -5
+Where dl is the change in land. Though I am not entirely sure how to interpret this result. You cant buy any more land without changing the basis. 
 E. Look again at part 5c. If John and Jane have 10 extra workers, how much of their land
 should they plant with corn versus wheat?
 
