@@ -19,7 +19,7 @@ Directory listing all the assessments throughout the course.
 [A2TakeHome.tex](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assesments/Assesment2/A2TakeHome.nb):
 * This document contains my answers and algorithmic steps to solving the take home problems.
 ##### Reflection on A2 take home:
-* Question 2 had me stuck forever, I was having trouble because I forgot that just because something is listed as part of the optimal solution doesn't mean its in the basis. So I made the mistake of putting x1 in the basis with out checking in fact where the slack is left in the LP. Turns out that x2 and x3 had no slack but were supposed to be in the basis and x1 had slack to work with so that meant s1 was in the basis. My mistake was with the original basis set up. I need to work on my problem set up skills more and not my algorithm execution skills.
+Question 2 had me stuck forever, I was having trouble because I forgot that just because something is listed as part of the optimal solution doesn't mean its in the basis. So I made the mistake of putting x1 in the basis with out checking in fact where the slack is left in the LP. Turns out that x2 and x3 had no slack but were supposed to be in the basis and x1 had slack to work with so that meant s1 was in the basis. My mistake was with the original basis set up. I need to work on my problem set up skills more and not my algorithm execution skills.
 ####Assessment 3:
 It calls for skills dealing with two phase simplex as well as sensitivity analysis.
 ####Reflection
