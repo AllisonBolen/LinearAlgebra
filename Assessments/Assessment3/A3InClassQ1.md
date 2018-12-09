@@ -26,7 +26,7 @@ This point is basic because it is all non negative values.
 C. The objective function coefficient vector is [3,2,-1,0,0,0,0]. Its dot product with a direction vector gives the amount that moving in that direction would change the objective function value, so positive dot product means objective would increase, negative dot product means objective would decrease.
 
 For ii, unbounded LP would mean a direction of improvement for the objective that never causes any variables (decision or slack) to become negative.
-- I: See [A3InclassQ2C.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assesments/Assesment3/A3InClassQ2C.nb) for the answers for this.
+- I: See [A3InclassQ2C.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assessments/Assessment3/A3InClassQ2C.nb) for the answers for this.
 
 - II: You could tell that this lp is unbounded because the direction of improvement would never have any variables become negative. We can see that with direction 2 we have a valid direction of improvement however there are not any negative variables so this means that the LP is unbounded.
 
