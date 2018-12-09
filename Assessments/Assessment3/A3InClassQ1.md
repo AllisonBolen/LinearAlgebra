@@ -5,7 +5,7 @@ The purpose of the Two Phase algorithm:
 - When dual and simplex don't work you use the two phase algorithm to find the optimal. When origin is infeasible and there is no dual feasibility. When the RHS of the tableau has negative values and the objective row has negative values, you use the two phase algorithm.
 - The implementation of two phase is:
 1. Reach a feasible solution.
-  * Intorduce one artificail variable for every negative RHS, opposite, sign of the excess var.
+  * Introduce one artificial variable for every negative RHS, opposite, sign of the excess var.
 2. Continue with the ordinary simplex algorithm from the basic feasible solution you just obtained.
 Results of phase one:
 * If we finish phase one and get optimal but optimal is negative then the LP is infeasible.
@@ -26,7 +26,7 @@ This point is basic because it is all non negative values.
 C. The objective function coefficient vector is [3,2,-1,0,0,0,0]. Its dot product with a direction vector gives the amount that moving in that direction would change the objective function value, so positive dot product means objective would increase, negative dot product means objective would decrease.
 
 For ii, unbounded LP would mean a direction of improvement for the objective that never causes any variables (decision or slack) to become negative.
-- I: See [A3InclassQ2CII.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assesments/Assesment3/A3InClassQ2CII.nb) for the answers for this.
+- I: See [A3InclassQ2C.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assesments/Assesment3/A3InClassQ2C.nb) for the answers for this.
 
 - II: You could tell that this lp is unbounded because the direction of improvement would never have any variables become negative. We can see that with direction 2 we have a valid direction of improvement however there are not any negative variables so this means that the LP is unbounded.
 
@@ -37,20 +37,8 @@ st: 1/5u + 3/10g + p >= 1000
     1/5 + 1/10g +1/20p <= 164
     g <= 500
     u,g,p >= 0
-reconfigure to standard inequ. form :
-min: 4u +10g +25p
-st: -1/5u - 3/10g - p <= -1000
-    1/5 + 1/10g +1/20p <= 164
-    g <= 500
-    u,g,p >= 0
-Convert from min to max b/c its easier to do maximizations:
-max: -4u -10g -25p  (Flip the objective function)
-st -1/5u - 3/10g - p <= -1000
-    1/5 + 1/10g +1/20p <= 164
-    g <= 500
-    u,g,p >= 0
 Approach: I think this will be a two phase problem because we have an infeasible basis to start with.
-You know I really don't know how to do two phase though. Good page to [checkout](https://www.slideshare.net/mplad/two-phase-method-linear-programming). My attempt at this problem is shown in [A3InClassQ3.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assesments/Assesment3/)
+You know, Im stuck on two phase, not my best algorithm though. Good page to [checkout](https://www.slideshare.net/mplad/two-phase-method-linear-programming). My attempt at this problem is shown in [A3InClassQ3.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assesments/Assesment3/).
 
 #Question 4:
 Max z = 2x1 + 3x2
