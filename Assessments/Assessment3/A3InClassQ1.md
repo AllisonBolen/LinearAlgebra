@@ -38,7 +38,7 @@ st: 1/5u + 3/10g + p >= 1000
     g <= 500
     u,g,p >= 0
 Approach: I think this will be a two phase problem because we have an infeasible basis to start with.
-You know, Im stuck on two phase, not my best algorithm though. Good page to [checkout](https://www.slideshare.net/mplad/two-phase-method-linear-programming). My attempt at this problem is shown in [A3InClassQ3.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assesments/Assesment3/).
+You know, Im stuck on two phase, not my best algorithm though. Good page to [checkout](https://www.slideshare.net/mplad/two-phase-method-linear-programming). My attempt at this problem is shown in [A3InClassQ3.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assessments/Assessment3/A3InClassQ3.nb).
 
 #Question 4:
 Max z = 2x1 + 3x2
