@@ -49,8 +49,8 @@ st -1/5u - 3/10g - p <= -1000
     1/5 + 1/10g +1/20p <= 164
     g <= 500
     u,g,p >= 0
-Approach: I think this will be a two phase problem because we have negatives in the objective and in the RHS.
-
+Approach: I think this will be a two phase problem because we have an infeasible basis to start with.
+You know I really don't know how to do two phase though. Good page to [checkout](https://www.slideshare.net/mplad/two-phase-method-linear-programming). My attempt at this problem is shown in [A3InClassQ3.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assesments/Assesment3/)
 
 #Question 4:
 Max z = 2x1 + 3x2
