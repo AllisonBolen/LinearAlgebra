@@ -108,3 +108,6 @@ B. Interior, all points are in the interior of the feasible region
 C. Neither , you have interior points and border points
 D. Simplex all points are on the border
 E. Neither, infeasible
+
+
+# [home](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen)
