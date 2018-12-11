@@ -3,6 +3,7 @@
 ## Grade Discussion:
 I have provided evidence of facility with simplex, dual simplex, and two phase, represented in Assessments 1 to 3. I have shown that I can analyze different sates of a tableau in the first 3 assessments and especially in assessment 3 as well as the Pumpkin spice problem. The sub directories listed under "Examples and Discussion" shows that I investigated what I didn't know and accumulated information from a wide range of sources for later recall.
 I also have contributed a connections and explorations section providing examples of how I went beyond the scope of the course and to learn new aspects of linear optimization. I was curious about the ellipsoid method and I had the opportunity to see how excel uses the simplex algorithm to solve problems.
+I have an analytics section as well containing a "consultancy document" as though I had been asked to solve a real world problem. I chose to work with the cabinets problem because it was the closest to a knapsack problem I could find that I could also verify my answer with.
 ---
 ## Assessments:
 Directory listing all the assessments throughout the course.
