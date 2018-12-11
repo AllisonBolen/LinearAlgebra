@@ -13,6 +13,7 @@ The Ellipsoid method is polynomial time for linear programming. It is a slow pro
 Basically the ellipsoid method uses the volume of an ellipse that decrease in size with each of the iterations through the method, thus this creates a minimization of feasible points within the ellipse region.  (This link goes into more detail and has pseudo-code for the algorithm. [linking for my own curiosity](https://www.cs.princeton.edu/courses/archive/fall05/cos521/ellipsoid.pdf] (linking for my own curiosity)
 
 
+# Interesting use cases for Optimizations:
 
 
 
