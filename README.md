@@ -32,12 +32,12 @@ You can find my answers and Mathematica notebooks in the directory linked above.
 Assessment calls for skills dealing with Affine scaling and hessian gradient calculations. It also asks for us to think about and attempt the KKT algorithm.
 ---
 ## Examples and Discussion
-### Simplex
-### Dual Simplex
+### [Simplex](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/simplex)
+### [Dual Simplex](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/dual)
 ### Two Phase
 ### Affine Scaling
-### Interger programming
+### Integer programming
 ### Newtons method
-### KKT 
+### KKT
 ---
 ## Connections and Exploration
