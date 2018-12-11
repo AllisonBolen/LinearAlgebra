@@ -1,5 +1,8 @@
 # MATH 360
 
+## Grade Discussion:
+
+---
 ## Assessments:
 Directory listing all the assessments throughout the course.
 ### [Assessment 1](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/Assessments/Assessment1):
@@ -27,3 +30,6 @@ You can find my answers and Mathematica notebooks in the directory linked above.
 
 ### [Assessment 4](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/Assessments/Assessment4):
 Assessment calls for skills dealing with Affine scaling and hessian gradient calculations. It also asks for us to think about and attempt the KKT algorithm.
+
+---
+## Connections and Exploration
