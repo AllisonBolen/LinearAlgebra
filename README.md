@@ -5,12 +5,12 @@
 ---
 ## Assessments:
 Directory listing all the assessments throughout the course.
-### [Assessment 1](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/Assessments/Assessment1):
+### [Assessment 1](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/Assessments/Assessment1)
 * Info held in the Assessment 1 sub directory.This sub directory contains the original question document as well as images and answers to those questions. The relevant files will be mentioned in [A1InClass.md](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assessments/Assessment1/A1InClass.md).
 #### Reflection on Assessment one:
 * This assessment was good for reinforcing the basic ideas of how constraints work and a good way to think visually about LPs. I think I understand the basics fairly well, though the stretch questions I could be wrong about.
 
-### [Assessment 2](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/Assessments/Assessment2):
+### [Assessment 2](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/Assessments/Assessment2)
 * Info held in the Assessment 2 sub directory. Assessment two was about analyzing tableaus and interpreting results of simplex and dual simplex.
 #### In Class
 * [A2InClass.tex](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assesments/Assesment2/A2InClass.tex) contains my answers for Assessment 2 for the in class portion. The Mathematica files will be referenced within the tex file when applicable.
@@ -29,6 +29,7 @@ You can find my answers and Mathematica notebooks in the directory linked above.
 * This assessment is pretty cool. It calls for skills dealing with the two phase simplex method as well as sensitivity analysis. I think I'm pretty good at the sensitivity analysis. I also think two phase is cool, I get that it is used when simplex and dual simplex cant be used, but the transition from phase one to phase two is difficult for me. I'm glad I could get this two phase one solved though, seeing how the transformations correlate to an actual solution is awesome. By far my favorite one. I expressed facility with solution interpretation in this assessment as well as exemplified skills dealing with solving two phase.
 
 ### [Assessment 4](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/Assessments/Assessment4)
+
 Assessment calls for skills dealing with Affine scaling and hessian gradient calculations. It also asks for us to think about and attempt the KKT algorithm.
 ---
 ## Examples and Discussion
