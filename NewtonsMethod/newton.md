@@ -27,18 +27,21 @@ References:
 A better walk through is provided in the Book link on page 4-7.
 
 ## Comparable:
+#### Steepest Descent
 ###References:
 - [Document](http://fivedots.coe.psu.ac.th/~mitchai/wp-content/uploads/2009/07/steepest.pdf)
 - [Wolfram](http://mathworld.wolfram.com/MethodofSteepestDescent.html)
 - [Other](http://www.math.usm.edu/lambers/mat419/lecture10.pdf)
 - [Awesome Video Tutorial](https://www.youtube.com/watch?v=MbYvM2NFLec)
 - [Awesome Video Tutorial Part 2](https://www.youtube.com/watch?v=30TLyHgjfJ4)
-#### Steepest Descent
+
 - The steepest descent method uses only first derivatives in
 selecting a suitable search direction.
 - The gradient of a function represents the direction of increase.
 - Use this method when Newtons method is unreliable and you can't find the solution using traditional analytics, use steepest decent.
 - For steps on how to solve one check the video listed above. By far my favorite tutorial so far.
 
+### Interesting:
+I kept reading in comments on videos and articles that people use both newtons method and steepest decent a lot in machine learning programs. Thats cool as hell.
 
 # [home](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen)
