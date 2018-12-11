@@ -10,4 +10,9 @@ Steps:
 - Convert primal into Dual
 - Pick a leaving variable based on the most negative basic variable in the RHS.
 - Pick an entering column based on the dual ratio test, the entering variable will be the smallest negative \frac{objective Row at i}{pivot row at i}
+- Pivot on the row col element
+- if you no longer have negatives in the RHS stop, if you do, repeat the above steps.
 - You are at optimum when there are no more negatives in the right hand side of the LP.
+
+### Example:
+[warehouse.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/dual/warehouse.nb)
