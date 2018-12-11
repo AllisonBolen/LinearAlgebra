@@ -1,15 +1,15 @@
-##Question 1:
+### Question 1:
 Please see file [A1InClassQ1.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assessments/Assessment1/A1InClassQ1.nb).
-## Question 2: 
-### A:
+### Question 2:
+#### A:
   The graph is shown in [A1InClassQ2A.png](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assessments/Assessment1/A1InClassQ2A.png)
-### B:
+#### B:
   The feasible region is unbounded. I can tell because there is no constraint stopping the the vector of [1,1].
-### C:
+#### C:
   The contours can be found in the file [A1InClassQ2C.png](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assessments/Assessment1/A1InClassQ2C.png). The contours are lines where the objective function is the same.
 Based on the feasible region and the contours I can see that the LP is unbounded because there is a direction of travel in the
 maximization problem that is not bounded.
-### D:
+#### D:
 find and appropriate linear objective function or explain why it would be impossible
 - I. An objective function so that the where the LP has no optimal would be if the constraints were met
 but the LP was unbounded: so x1 -3x2 = z this means that the optimum can be ever improving so thus there is no optimum.
