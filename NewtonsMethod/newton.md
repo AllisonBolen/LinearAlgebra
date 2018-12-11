@@ -39,3 +39,6 @@ selecting a suitable search direction.
 - The gradient of a function represents the direction of increase.
 - Use this method when Newtons method is unreliable and you can't find the solution using traditional analytics, use steepest decent.
 - For steps on how to solve one check the video listed above. By far my favorite tutorial so far.
+
+
+# [home](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen)

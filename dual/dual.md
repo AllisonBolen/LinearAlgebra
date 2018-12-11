@@ -16,3 +16,6 @@ Steps:
 
 ### Example:
 [warehouse.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/dual/warehouse.nb)
+
+
+# [home](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen)
