@@ -1,5 +1,5 @@
 ### Question 1:
-Please see file [A1InClassQ1.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assessments/Assessment1/A1InClassQ1.nb).
+Please see file [A1InClassQ1.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assessments/Assessment1/A1InClassQ1.nb) for answers to question one A and B.
 ### Question 2:
 - A: The graph is shown in [A1InClassQ2A.png](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assessments/Assessment1/A1InClassQ2A.png)
 - B: The feasible region is unbounded. I can tell because there is no constraint stopping the the vector of [1,1].
