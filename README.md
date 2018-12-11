@@ -28,7 +28,7 @@ You can find my answers and Mathematica notebooks in the directory linked above.
 #### Reflection
 * This assessment is pretty cool. It calls for skills dealing with the two phase simplex method as well as sensitivity analysis. I think I'm pretty good at the sensitivity analysis. I also think two phase is cool, I get that it is used when simplex and dual simplex cant be used, but the transition from phase one to phase two is difficult for me. I'm glad I could get this two phase one solved though, seeing how the transformations correlate to an actual solution is awesome. By far my favorite one. I expressed facility with solution interpretation in this assessment as well as exemplified skills dealing with solving two phase.
 
-### [Assessment 4](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/Assessments/Assessment4):
+### [Assessment 4](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/Assessments/Assessment4)
 Assessment calls for skills dealing with Affine scaling and hessian gradient calculations. It also asks for us to think about and attempt the KKT algorithm.
 ---
 ## Examples and Discussion
