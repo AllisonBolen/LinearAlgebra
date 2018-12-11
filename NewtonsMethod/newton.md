@@ -32,6 +32,7 @@ A better walk through is provided in the Book link on page 4-7.
 - [Wolfram](http://mathworld.wolfram.com/MethodofSteepestDescent.html)
 - [Other](http://www.math.usm.edu/lambers/mat419/lecture10.pdf)
 - [Awesome Video Tutorial](https://www.youtube.com/watch?v=MbYvM2NFLec)
+- [Awesome Video Tutorial Part 2](https://www.youtube.com/watch?v=30TLyHgjfJ4)
 #### Steepest Descent
 - The steepest descent method uses only first derivatives in
 selecting a suitable search direction.
