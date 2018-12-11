@@ -5,10 +5,12 @@ References:
 - [Book Link](https://www.cs.ccu.edu.tw/~wtchu/courses/2014s_OPT/Lectures/Chapter%209%20Newton%27s%20Method.pdf)
 ##Information:
 - Newton's method for optimization is a second order method: the first order, the gradian and the second derivative aka the hessian are all used.
+- Newton's method is used for unconstrained optimization.
 - Zero Finding: In the first order you are just searching for a point where the function is 0.  
 - Minimizing or maximizing optimization: We want to find where the derivative of the function is 0.
 - Con: it can be hard to tell if you are going toward a max or a min since newtons method functions the same for both.
-- Pro: Newtons method is generally faster.  
+- Pro: Newtons method is generally fast.  
+## Steps:
   - Set count limit (maybe N=100 or so)
   - Set tolerance (for example, tol= $MachineEpsilon*10)
   - Initialize current point: xc=x_{0}
@@ -19,7 +21,6 @@ References:
        - n=n+1
 - }until (Norm(s)<tol or n>N)
 
-Newton's method is used for unconstrained optimization.
 ### Walk Through:
   find the maximum value of f(x)=2sin(x)-\frac{x^2}{10} with and initial guess of x_0 = 2.5.
   Solution:
