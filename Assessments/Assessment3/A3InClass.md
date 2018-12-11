@@ -8,6 +8,7 @@ The purpose of the Two Phase algorithm:
   * Introduce one artificial variable for every negative RHS, opposite, sign of the excess var.
 2. Continue with the ordinary simplex algorithm from the basic feasible solution you just obtained.
 Results of phase one:
+* Do the simplex alg on teh auxiliary objective row to optimize the aux. obj. row.
 * If we finish phase one and get optimal but optimal is negative then the LP is infeasible.
 * If we are at optimum and the RHS is negative, the original LP is infeasible.
 * If we are at optimum and the RHS is 0, we are at a basic feasible point.
@@ -38,7 +39,9 @@ st: 1/5u + 3/10g + p >= 1000
     g <= 500
     u,g,p >= 0
 Approach: I think this will be a two phase problem because we have an infeasible basis to start with.
-You know, Im stuck on two phase, not my best algorithm though. Good page to [checkout](https://www.slideshare.net/mplad/two-phase-method-linear-programming). My attempt at this problem is shown in [A3InClassQ3.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assessments/Assessment3/A3InClassQ3.nb).
+You know, two phase is pretty cool. Good pages I used for help, [here](https://www.slideshare.net/mplad/two-phase-method-linear-programming), [here](https://math.stackexchange.com/questions/403053/why-in-phase-i-of-the-simplex-method-if-artificial-variable-become-nonbasic-it) and [here](http://www.maths.qmul.ac.uk/~ffischer/teaching/opt/notes/notes8.pdf).
+A. My attempt at this problem is shown in [A3InClassQ3.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assessments/Assessment3/A3InClassQ3.nb).
+B. If the professor could give more of his time to the project he could save 500$ per hour of work he invests.
 
 #Question 4:
 Max z = 2x1 + 3x2
