@@ -1,7 +1,8 @@
 # MATH 360
 
 ## Grade Discussion:
-
+I have provided evidence of facility with simplex, dual simplex, and two phase, represented in Assessments 1 to 3. I have shown that I can analyze different sates of a tableau in the first 3 assessments and especially in assessment 3 as well as the Pumpkin spice problem. The sub directories listed under "Examples and Discussion" shows that I investigated what I didn't know and accumulated information from a wide range of sources for later recall.
+I also have contributed a connections and explorations section providing examples of how I went beyond the scope of the course and to learn new aspects of linear optimization. I was curious about the ellipsoid method and I had the opportunity to see how excel uses the simplex algorithm to solve problems.
 ---
 ## Assessments:
 Directory listing all the assessments throughout the course.
@@ -35,12 +36,25 @@ This assessment calls for skills dealing with Affine scaling and hessian gradien
 ---
 ## Examples and Discussion
 ### [Simplex](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/simplex)
+Discuss the steps, outcomes and drawbacks of simplex alg as well as providing an example solution.
 ### [Dual Simplex](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/dual)
+Discuss the steps, outcomes and drawbacks of dual simplex alg as well as providing an example solution.
+
 ### [Two Phase](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/TwoPhase)
-### [Analytics](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/AnalyticsProblem)
+Discuss the steps, outcomes and drawbacks of two phase simplex alg as well as providing an example solution.
+
 ### [Affine Scaling](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/AffineScaling)
+Discuss the steps, outcomes and drawbacks of Affine Scaling alg as well as providing an attempted example solution.
+
 ### [Integer programming](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/IntegerProgramming)
+Discuss the steps, outcomes and drawbacks of Integer programming alg as well as providing an example solution.
+
 ### [Newtons method](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/NewtonsMethod)
+Discuss the steps, outcomes and drawbacks of Newtons Method alg as well as an attempted example solution.
+
 ### [KKT](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/KKT)
+Discuss the steps, outcomes and drawbacks of simplex alg as well as providing links to good resources for going through solutions.
+
+### [Analytics](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/AnalyticsProblem)
 ---
-## Connections and Exploration
+## [Connections and Exploration](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/connections)
