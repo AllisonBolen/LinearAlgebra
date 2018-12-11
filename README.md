@@ -23,7 +23,7 @@ Directory listing all the assessments throughout the course.
 
 ### [Assessment 3](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/Assessments/Assessment3)
 (It is at this point where I thought it more efficient to produce work than fight with latex compile errors, so answers will now be help in Markdown files.)
-It calls for skills dealing with two phase simplex as well as sensitivity analysis.
+This assessment calls for skills dealing with two phase simplex as well as sensitivity analysis.
 You can find my answers and Mathematica notebooks in the directory linked above. My written interpretations are in [A3InClass.md](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assessments/Assessment3/A3InClass.md)
 #### Reflection
 * This assessment is pretty cool. It calls for skills dealing with the two phase simplex method as well as sensitivity analysis. I think I'm pretty good at the sensitivity analysis. I also think two phase is cool, I get that it is used when simplex and dual simplex cant be used, but the transition from phase one to phase two is difficult for me. I'm glad I could get this two phase one solved though, seeing how the transformations correlate to an actual solution is awesome. By far my favorite one. I expressed facility with solution interpretation in this assessment as well as exemplified skills dealing with solving two phase.
