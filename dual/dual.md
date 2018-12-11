@@ -1,5 +1,7 @@
 # Dual Simplex
-
+## References:
+[One](https://www.linearprogramming.info/how-to-solve-a-linear-programming-model-with-dual-simplex-method/)
+[Primal v Dual](https://www.linearprogramming.info/primal-dual-relationships-in-linear-programming-duality-theory-in-lp/)
 ## Contex:
 - Dual simplex is used when the tableau represents a point that is dual feasible (objective row >= 0) and not primal feasible (RHS <0)
 - The objective row of an LP is non negative exactly when the tableau corresponds to a feasible point for the dual LP.
