@@ -52,6 +52,6 @@ selecting a suitable search direction.
 - For steps on how to solve one check the video listed above. By far my favorite tutorial so far.
 
 ### Interesting:
-I kept reading in comments on videos and articles that people use both newtons method and steepest decent a lot in machine learning programs. Thats cool as hell.
+I kept reading in comments on videos and articles. People use both newtons method and steepest decent in machine learning programs. Thats cool as hell.
 
 # [home](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen)
