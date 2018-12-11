@@ -34,10 +34,11 @@ Assessment calls for skills dealing with Affine scaling and hessian gradient cal
 ## Examples and Discussion
 ### [Simplex](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/simplex)
 ### [Dual Simplex](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/dual)
-### Two Phase
-### Affine Scaling
-### Integer programming
-### Newtons method
-### KKT
+### [Two Phase]()
+### [Analytics]()
+### [Affine Scaling]()
+### [Integer programming]()
+### [Newtons method]()
+### [KKT])()
 ---
 ## Connections and Exploration
