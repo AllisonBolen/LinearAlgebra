@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     60162,       1543]
-NotebookOptionsPosition[     55279,       1460]
-NotebookOutlinePosition[     55632,       1476]
-CellTagsIndexPosition[     55589,       1473]
+NotebookDataLength[     60208,       1543]
+NotebookOptionsPosition[     55325,       1460]
+NotebookOutlinePosition[     55678,       1476]
+CellTagsIndexPosition[     55635,       1473]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1424,7 +1424,7 @@ Cell[BoxData[
      RowBox[{"items", ".", " ", "However"}], " ", "it", " ", "would", " ", 
      "only", " ", "make", " ", "sesne", " ", "to", " ", "buy", " ", "more", 
      " ", "of", " ", "an", " ", "item", " ", "if", " ", "it", " ", "costs", 
-     " ", "less", " ", "than", " ", "teh", " ", "amount", " ", "of", " ", 
+     " ", "less", " ", "than", " ", "the", " ", "amount", " ", "of", " ", 
      "profit", " ", "it", " ", "can", " ", 
      RowBox[{"generate", ".", " ", "Otherwise"}]}], ",", 
     RowBox[{"we", " ", "dont", " ", "want", " ", 
@@ -1454,8 +1454,8 @@ Cell[BoxData[
   3.751236371768462*^9}, {3.751236607361882*^9, 3.751236851112582*^9}, {
   3.7512368845208178`*^9, 3.751237028594273*^9}, {3.752529074008176*^9, 
   3.7525291021178703`*^9}, {3.752529228339594*^9, 3.75252927180263*^9}, {
-  3.752529323130353*^9, 
-  3.752529326032889*^9}},ExpressionUUID->"1d4a99da-1ab1-4dc4-b1aa-\
+  3.752529323130353*^9, 3.752529326032889*^9}, {3.753494655703848*^9, 
+  3.753494655830235*^9}},ExpressionUUID->"1d4a99da-1ab1-4dc4-b1aa-\
 179902f53fc1"]
 },
 WindowSize->{1094, 698},
@@ -1544,7 +1544,7 @@ Cell[46325, 1252, 333, 9, 30, "Input",ExpressionUUID->"fadb43fd-c1e1-454b-8bfb-d
 Cell[46661, 1263, 2748, 68, 294, "Output",ExpressionUUID->"093d6cba-72eb-486c-859a-25f8e8c581ac"]
 }, Open  ]],
 Cell[49424, 1334, 3257, 77, 346, "Input",ExpressionUUID->"44986952-9b65-4402-8bee-a16fa4a81e95"],
-Cell[52684, 1413, 2591, 45, 178, "Input",ExpressionUUID->"1d4a99da-1ab1-4dc4-b1aa-179902f53fc1"]
+Cell[52684, 1413, 2637, 45, 178, "Input",ExpressionUUID->"1d4a99da-1ab1-4dc4-b1aa-179902f53fc1"]
 }
 ]
 *)

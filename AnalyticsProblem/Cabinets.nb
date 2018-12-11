@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     18185,        530]
-NotebookOptionsPosition[     15956,        486]
-NotebookOutlinePosition[     16311,        502]
-CellTagsIndexPosition[     16268,        499]
+NotebookDataLength[     18437,        536]
+NotebookOptionsPosition[     16207,        492]
+NotebookOutlinePosition[     16562,        508]
+CellTagsIndexPosition[     16519,        505]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -478,14 +478,20 @@ Cell[BoxData[
   RowBox[{"(*", 
    RowBox[{"We", " ", "are", " ", "now", " ", "at", " ", "optimum"}], "*)"}], 
   "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", "Reference", " ", "*)"}]}]], "Input",
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Reference", ":", " ", "https", ":"}], "//", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"www", ".", "purplemath", ".", "com"}], "/", "modules"}], "/", 
+     RowBox[{"linprog3", ".", "htm"}]}]}], " ", "*)"}]}]], "Input",
  CellChangeTimes->{{3.7533251054083548`*^9, 3.753325121055255*^9}, {
-  3.753325193516979*^9, 
-  3.753325205747052*^9}},ExpressionUUID->"e51a4ddc-fa69-4523-8022-\
+  3.753325193516979*^9, 3.753325205747052*^9}, {3.753493754453843*^9, 
+  3.75349375489972*^9}},ExpressionUUID->"e51a4ddc-fa69-4523-8022-\
 82785d1f134b"]
 },
 WindowSize->{808, 698},
-WindowMargins->{{Automatic, -80}, {Automatic, 18}},
+WindowMargins->{{Automatic, 144}, {Automatic, 32}},
 FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
 2018)",
 StyleDefinitions->"Default.nb"
@@ -531,7 +537,7 @@ Cell[13812, 421, 618, 15, 94, "Input",ExpressionUUID->"a424c3f8-0d68-48b7-8c58-f
 Cell[14433, 438, 154, 3, 34, "Output",ExpressionUUID->"adf07cc3-727f-4133-9f04-200b47005396"],
 Cell[14590, 443, 966, 29, 118, "Output",ExpressionUUID->"09c156e8-080f-41e5-a282-60c833f7fa3c"]
 }, Open  ]],
-Cell[15571, 475, 381, 9, 52, "Input",ExpressionUUID->"e51a4ddc-fa69-4523-8022-82785d1f134b"]
+Cell[15571, 475, 632, 15, 52, "Input",ExpressionUUID->"e51a4ddc-fa69-4523-8022-82785d1f134b"]
 }
 ]
 *)
