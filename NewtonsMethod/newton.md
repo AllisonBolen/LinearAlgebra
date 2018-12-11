@@ -9,7 +9,17 @@ References:
 - Minimizing or maximizing optimization: We want to find where the derivative of the function is 0.
 - Con: it can be hard to tell if you are going toward a max or a min since newtons method functions the same for both.
 - Pro: Newtons method is generally faster.  
+  - Set count limit (maybe N=100 or so)
+  - Set tolerance (for example, tol= $MachineEpsilon*10)
+  - Initialize current point: xc=x_{0}
+  - Set count: n=0
+  - Do:{
+       - Solve (Hessian(xc)).s=(gradient(xc)) for s
+       - xc = xc - s
+       - n=n+1
+- }until (Norm(s)<tol or n>N)
 
+Newton's method is used for unconstrained optimization.
 ### Walk Through:
   find the maximum value of f(x)=2sin(x)-\frac{x^2}{10} with and initial guess of x_0 = 2.5.
   Solution:
