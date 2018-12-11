@@ -20,3 +20,6 @@ Impossible because this is not a constrained LP,
 there will always be a more optimal solution, so that mean there is only be but we can never reach it.
   - VI. there is not an objective function that would make this LP infeasible because by simply changing the intercepts of the
 objective you can reach the feasible region.
+
+
+# [home](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen)
