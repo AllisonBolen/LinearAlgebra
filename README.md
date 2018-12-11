@@ -30,6 +30,14 @@ You can find my answers and Mathematica notebooks in the directory linked above.
 
 ### [Assessment 4](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen/Assessments/Assessment4):
 Assessment calls for skills dealing with Affine scaling and hessian gradient calculations. It also asks for us to think about and attempt the KKT algorithm.
-
+---
+## Examples and Discussion
+### Simplex
+### Dual Simplex
+### Two Phase
+### Affine Scaling
+### Interger programming
+### Newtons method
+### KKT 
 ---
 ## Connections and Exploration
