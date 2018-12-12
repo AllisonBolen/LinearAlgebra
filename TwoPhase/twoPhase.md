@@ -15,7 +15,7 @@ Results of phase one:
 then go do the simplex until you are at optimum.
 
 # References
-[]()
-[]()
+[A](https://www.mathstools.com/section/main/Two-phase_Method_Example#.XBBnv5NKj_Q)
+[B](http://optlab.mcmaster.ca/feng/4O03/Two.Phase.Simplex.pdf)
 
 # [home](https://github.com/AllisonBolen/LinearAlgebra/tree/bolen)
