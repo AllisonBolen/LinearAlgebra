@@ -14,7 +14,8 @@ Basically the ellipsoid method uses the volume of an ellipse that decrease in si
 
 
 # Interesting use cases for Optimizations:
-
+Machine learning
+Data science
 
 
 

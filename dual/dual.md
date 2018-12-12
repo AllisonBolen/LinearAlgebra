@@ -16,7 +16,7 @@ Given an LP in standard (max, st <=) form and its dual in minimize form (>=), If
   - If Primal is feasible then dual cannot be bounded <-> if D is unbounded the primal is infeasible.
   - If D is feasible then primal cannot be unbounded, if Primal is unbounded then Dual is infeasible.
   - If Primal and dual are both feasible then both obtain and optimum.
-  - Proof:  see notebook [WeakDualProof.nb]()
+  - Proof:  see notebook [WeakDualProof.nb](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/dual/WeakDualProof.nbs)
 ## Strong Duality:
 if x is infeasible for Primal and y is infeasible for Dual then there exist optimal (basic) x^* and y^* and y^\*Tb = c^Tx^*
 If you've got feasibility then both must be optimum.

@@ -1,7 +1,7 @@
 # Assessment 4
 
 ## Question one
-See file []() for multiple steps to for Affine scaling problem. (It kept increasing in size so after like 8 iterations so I just moved on.)
+See file [A4InClassQ4](https://github.com/AllisonBolen/LinearAlgebra/blob/bolen/Assessments/Assessment4/A4InClassQ4.nb) for multiple steps to for Affine scaling problem. (It kept increasing in size so after like 8 iterations so I just moved on.)
 ## Question Two
 Based off what we discussed in class:
  - A.  Yes
